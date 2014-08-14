@@ -8,7 +8,7 @@ import geometry_msgs.msg
 import kurosp.msg
 
 class Trajectory(genpy.Message):
-  _md5sum = "f5708bdc8d8a7a7d700e87483049ced6"
+  _md5sum = "d16cd91c890f877250102e8f9ecafa3f"
   _type = "kurosp/Trajectory"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """Info info
@@ -27,7 +27,7 @@ uint8 frame_type
 ================================================================================
 MSG: kurosp/Frame
 geometry_msgs/Point position
-Ypr rotation
+Ypr orientation
 
 ================================================================================
 MSG: geometry_msgs/Point
@@ -91,7 +91,7 @@ float64 roll
         _v1 = val1.position
         _x = _v1
         buff.write(_struct_3d.pack(_x.x, _x.y, _x.z))
-        _v2 = val1.rotation
+        _v2 = val1.orientation
         _x = _v2
         buff.write(_struct_3d.pack(_x.yaw, _x.pitch, _x.roll))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
@@ -124,7 +124,7 @@ float64 roll
         start = end
         end += 24
         (_x.x, _x.y, _x.z,) = _struct_3d.unpack(str[start:end])
-        _v4 = val1.rotation
+        _v4 = val1.orientation
         _x = _v4
         start = end
         end += 24
@@ -150,7 +150,7 @@ float64 roll
         _v5 = val1.position
         _x = _v5
         buff.write(_struct_3d.pack(_x.x, _x.y, _x.z))
-        _v6 = val1.rotation
+        _v6 = val1.orientation
         _x = _v6
         buff.write(_struct_3d.pack(_x.yaw, _x.pitch, _x.roll))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
@@ -184,7 +184,7 @@ float64 roll
         start = end
         end += 24
         (_x.x, _x.y, _x.z,) = _struct_3d.unpack(str[start:end])
-        _v8 = val1.rotation
+        _v8 = val1.orientation
         _x = _v8
         start = end
         end += 24

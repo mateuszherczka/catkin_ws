@@ -60,11 +60,11 @@ struct Frame_
 
   Frame_()
     : position()
-    , rotation()  {
+    , orientation()  {
     }
   Frame_(const ContainerAllocator& _alloc)
     : position(_alloc)
-    , rotation(_alloc)  {
+    , orientation(_alloc)  {
     }
 
 
@@ -72,8 +72,8 @@ struct Frame_
    typedef  ::geometry_msgs::Point_<ContainerAllocator>  _position_type;
   _position_type position;
 
-   typedef  ::kurosp::Ypr_<ContainerAllocator>  _rotation_type;
-  _rotation_type rotation;
+   typedef  ::kurosp::Ypr_<ContainerAllocator>  _orientation_type;
+  _orientation_type orientation;
 
 
 
@@ -152,12 +152,12 @@ struct MD5Sum< ::kurosp::Frame_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "eb96e2c8f6de41c5ab37db56f4da0141";
+    return "a0b3cd24af794ce2c45f93a6489a2ef3";
   }
 
   static const char* value(const ::kurosp::Frame_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xeb96e2c8f6de41c5ULL;
-  static const uint64_t static_value2 = 0xab37db56f4da0141ULL;
+  static const uint64_t static_value1 = 0xa0b3cd24af794ce2ULL;
+  static const uint64_t static_value2 = 0xc45f93a6489a2ef3ULL;
 };
 
 template<class ContainerAllocator>
@@ -177,7 +177,7 @@ struct Definition< ::kurosp::Frame_<ContainerAllocator> >
   static const char* value()
   {
     return "geometry_msgs/Point position\n\
-Ypr rotation\n\
+Ypr orientation\n\
 \n\
 ================================================================================\n\
 MSG: geometry_msgs/Point\n\
@@ -210,7 +210,7 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.position);
-      stream.next(m.rotation);
+      stream.next(m.orientation);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -232,9 +232,9 @@ struct Printer< ::kurosp::Frame_<ContainerAllocator> >
     s << indent << "position: ";
     s << std::endl;
     Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.position);
-    s << indent << "rotation: ";
+    s << indent << "orientation: ";
     s << std::endl;
-    Printer< ::kurosp::Ypr_<ContainerAllocator> >::stream(s, indent + "  ", v.rotation);
+    Printer< ::kurosp::Ypr_<ContainerAllocator> >::stream(s, indent + "  ", v.orientation);
   }
 };
 

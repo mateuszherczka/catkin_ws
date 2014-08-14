@@ -152,12 +152,12 @@ struct MD5Sum< ::kurosp::Trajectory_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "f5708bdc8d8a7a7d700e87483049ced6";
+    return "d16cd91c890f877250102e8f9ecafa3f";
   }
 
   static const char* value(const ::kurosp::Trajectory_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xf5708bdc8d8a7a7dULL;
-  static const uint64_t static_value2 = 0x700e87483049ced6ULL;
+  static const uint64_t static_value1 = 0xd16cd91c890f8772ULL;
+  static const uint64_t static_value2 = 0x50102e8f9ecafa3fULL;
 };
 
 template<class ContainerAllocator>
@@ -192,7 +192,7 @@ uint8 frame_type\n\
 ================================================================================\n\
 MSG: kurosp/Frame\n\
 geometry_msgs/Point position\n\
-Ypr rotation\n\
+Ypr orientation\n\
 \n\
 ================================================================================\n\
 MSG: geometry_msgs/Point\n\

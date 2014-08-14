@@ -8,11 +8,11 @@ import geometry_msgs.msg
 import kurosp.msg
 
 class Frame(genpy.Message):
-  _md5sum = "eb96e2c8f6de41c5ab37db56f4da0141"
+  _md5sum = "a0b3cd24af794ce2c45f93a6489a2ef3"
   _type = "kurosp/Frame"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """geometry_msgs/Point position
-Ypr rotation
+Ypr orientation
 
 ================================================================================
 MSG: geometry_msgs/Point
@@ -28,7 +28,7 @@ float64 pitch
 float64 roll
 
 """
-  __slots__ = ['position','rotation']
+  __slots__ = ['position','orientation']
   _slot_types = ['geometry_msgs/Point','kurosp/Ypr']
 
   def __init__(self, *args, **kwds):
@@ -39,7 +39,7 @@ float64 roll
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       position,rotation
+       position,orientation
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -50,11 +50,11 @@ float64 roll
       #message fields cannot be None, assign default values for those that are
       if self.position is None:
         self.position = geometry_msgs.msg.Point()
-      if self.rotation is None:
-        self.rotation = kurosp.msg.Ypr()
+      if self.orientation is None:
+        self.orientation = kurosp.msg.Ypr()
     else:
       self.position = geometry_msgs.msg.Point()
-      self.rotation = kurosp.msg.Ypr()
+      self.orientation = kurosp.msg.Ypr()
 
   def _get_types(self):
     """
@@ -69,7 +69,7 @@ float64 roll
     """
     try:
       _x = self
-      buff.write(_struct_6d.pack(_x.position.x, _x.position.y, _x.position.z, _x.rotation.yaw, _x.rotation.pitch, _x.rotation.roll))
+      buff.write(_struct_6d.pack(_x.position.x, _x.position.y, _x.position.z, _x.orientation.yaw, _x.orientation.pitch, _x.orientation.roll))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -81,13 +81,13 @@ float64 roll
     try:
       if self.position is None:
         self.position = geometry_msgs.msg.Point()
-      if self.rotation is None:
-        self.rotation = kurosp.msg.Ypr()
+      if self.orientation is None:
+        self.orientation = kurosp.msg.Ypr()
       end = 0
       _x = self
       start = end
       end += 48
-      (_x.position.x, _x.position.y, _x.position.z, _x.rotation.yaw, _x.rotation.pitch, _x.rotation.roll,) = _struct_6d.unpack(str[start:end])
+      (_x.position.x, _x.position.y, _x.position.z, _x.orientation.yaw, _x.orientation.pitch, _x.orientation.roll,) = _struct_6d.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -101,7 +101,7 @@ float64 roll
     """
     try:
       _x = self
-      buff.write(_struct_6d.pack(_x.position.x, _x.position.y, _x.position.z, _x.rotation.yaw, _x.rotation.pitch, _x.rotation.roll))
+      buff.write(_struct_6d.pack(_x.position.x, _x.position.y, _x.position.z, _x.orientation.yaw, _x.orientation.pitch, _x.orientation.roll))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -114,13 +114,13 @@ float64 roll
     try:
       if self.position is None:
         self.position = geometry_msgs.msg.Point()
-      if self.rotation is None:
-        self.rotation = kurosp.msg.Ypr()
+      if self.orientation is None:
+        self.orientation = kurosp.msg.Ypr()
       end = 0
       _x = self
       start = end
       end += 48
-      (_x.position.x, _x.position.y, _x.position.z, _x.rotation.yaw, _x.rotation.pitch, _x.rotation.roll,) = _struct_6d.unpack(str[start:end])
+      (_x.position.x, _x.position.y, _x.position.z, _x.orientation.yaw, _x.orientation.pitch, _x.orientation.roll,) = _struct_6d.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill

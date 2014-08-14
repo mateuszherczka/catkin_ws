@@ -8,7 +8,7 @@ import geometry_msgs.msg
 import kurosp.msg
 
 class SendTrajectoryRequest(genpy.Message):
-  _md5sum = "c11e6cf574ce75afafddbe2018826953"
+  _md5sum = "4745e1e5e95d5a90576304f74b6f67d6"
   _type = "kurosp/SendTrajectoryRequest"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """Trajectory trajectory
@@ -31,7 +31,7 @@ uint8 frame_type
 ================================================================================
 MSG: kurosp/Frame
 geometry_msgs/Point position
-Ypr rotation
+Ypr orientation
 
 ================================================================================
 MSG: geometry_msgs/Point
@@ -92,7 +92,7 @@ float64 roll
         _v1 = val1.position
         _x = _v1
         buff.write(_struct_3d.pack(_x.x, _x.y, _x.z))
-        _v2 = val1.rotation
+        _v2 = val1.orientation
         _x = _v2
         buff.write(_struct_3d.pack(_x.yaw, _x.pitch, _x.roll))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
@@ -123,7 +123,7 @@ float64 roll
         start = end
         end += 24
         (_x.x, _x.y, _x.z,) = _struct_3d.unpack(str[start:end])
-        _v4 = val1.rotation
+        _v4 = val1.orientation
         _x = _v4
         start = end
         end += 24
@@ -149,7 +149,7 @@ float64 roll
         _v5 = val1.position
         _x = _v5
         buff.write(_struct_3d.pack(_x.x, _x.y, _x.z))
-        _v6 = val1.rotation
+        _v6 = val1.orientation
         _x = _v6
         buff.write(_struct_3d.pack(_x.yaw, _x.pitch, _x.roll))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
@@ -181,7 +181,7 @@ float64 roll
         start = end
         end += 24
         (_x.x, _x.y, _x.z,) = _struct_3d.unpack(str[start:end])
-        _v8 = val1.rotation
+        _v8 = val1.orientation
         _x = _v8
         start = end
         end += 24
@@ -297,6 +297,6 @@ _struct_I = genpy.struct_I
 _struct_B = struct.Struct("<B")
 class SendTrajectory(object):
   _type          = 'kurosp/SendTrajectory'
-  _md5sum = 'aab6c2231d5f57fac65036d46f1baeac'
+  _md5sum = 'a869aa137664163ea9fbb56cdd307123'
   _request_class  = SendTrajectoryRequest
   _response_class = SendTrajectoryResponse

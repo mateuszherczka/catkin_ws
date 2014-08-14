@@ -12,9 +12,9 @@
     :initarg :position
     :type geometry_msgs-msg:Point
     :initform (cl:make-instance 'geometry_msgs-msg:Point))
-   (rotation
-    :reader rotation
-    :initarg :rotation
+   (orientation
+    :reader orientation
+    :initarg :orientation
     :type kurosp-msg:Ypr
     :initform (cl:make-instance 'kurosp-msg:Ypr)))
 )
@@ -32,19 +32,19 @@
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader kurosp-msg:position-val is deprecated.  Use kurosp-msg:position instead.")
   (position m))
 
-(cl:ensure-generic-function 'rotation-val :lambda-list '(m))
-(cl:defmethod rotation-val ((m <Frame>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader kurosp-msg:rotation-val is deprecated.  Use kurosp-msg:rotation instead.")
-  (rotation m))
+(cl:ensure-generic-function 'orientation-val :lambda-list '(m))
+(cl:defmethod orientation-val ((m <Frame>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader kurosp-msg:orientation-val is deprecated.  Use kurosp-msg:orientation instead.")
+  (orientation m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <Frame>) ostream)
   "Serializes a message object of type '<Frame>"
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'position) ostream)
-  (roslisp-msg-protocol:serialize (cl:slot-value msg 'rotation) ostream)
+  (roslisp-msg-protocol:serialize (cl:slot-value msg 'orientation) ostream)
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <Frame>) istream)
   "Deserializes a message object of type '<Frame>"
   (roslisp-msg-protocol:deserialize (cl:slot-value msg 'position) istream)
-  (roslisp-msg-protocol:deserialize (cl:slot-value msg 'rotation) istream)
+  (roslisp-msg-protocol:deserialize (cl:slot-value msg 'orientation) istream)
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<Frame>)))
@@ -55,24 +55,24 @@
   "kurosp/Frame")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<Frame>)))
   "Returns md5sum for a message object of type '<Frame>"
-  "eb96e2c8f6de41c5ab37db56f4da0141")
+  "a0b3cd24af794ce2c45f93a6489a2ef3")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'Frame)))
   "Returns md5sum for a message object of type 'Frame"
-  "eb96e2c8f6de41c5ab37db56f4da0141")
+  "a0b3cd24af794ce2c45f93a6489a2ef3")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<Frame>)))
   "Returns full string definition for message of type '<Frame>"
-  (cl:format cl:nil "geometry_msgs/Point position~%Ypr rotation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: kurosp/Ypr~%float64 yaw~%float64 pitch~%float64 roll~%~%~%"))
+  (cl:format cl:nil "geometry_msgs/Point position~%Ypr orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: kurosp/Ypr~%float64 yaw~%float64 pitch~%float64 roll~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'Frame)))
   "Returns full string definition for message of type 'Frame"
-  (cl:format cl:nil "geometry_msgs/Point position~%Ypr rotation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: kurosp/Ypr~%float64 yaw~%float64 pitch~%float64 roll~%~%~%"))
+  (cl:format cl:nil "geometry_msgs/Point position~%Ypr orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: kurosp/Ypr~%float64 yaw~%float64 pitch~%float64 roll~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <Frame>))
   (cl:+ 0
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'position))
-     (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'rotation))
+     (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'orientation))
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <Frame>))
   "Converts a ROS message object to a list"
   (cl:list 'Frame
     (cl:cons ':position (position msg))
-    (cl:cons ':rotation (rotation msg))
+    (cl:cons ':orientation (orientation msg))
 ))

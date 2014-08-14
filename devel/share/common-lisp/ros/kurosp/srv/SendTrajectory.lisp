@@ -43,16 +43,16 @@
   "kurosp/SendTrajectoryRequest")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<SendTrajectory-request>)))
   "Returns md5sum for a message object of type '<SendTrajectory-request>"
-  "aab6c2231d5f57fac65036d46f1baeac")
+  "a869aa137664163ea9fbb56cdd307123")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'SendTrajectory-request)))
   "Returns md5sum for a message object of type 'SendTrajectory-request"
-  "aab6c2231d5f57fac65036d46f1baeac")
+  "a869aa137664163ea9fbb56cdd307123")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<SendTrajectory-request>)))
   "Returns full string definition for message of type '<SendTrajectory-request>"
-  (cl:format cl:nil "Trajectory trajectory~%~%================================================================================~%MSG: kurosp/Trajectory~%Info info~%Frame[] frames~%~%================================================================================~%MSG: kurosp/Info~%uint8 response_mode~%uint32 response_ms~%uint32 traj_id~%bool run~%uint32 vel~%uint32 tol~%uint8 frame_type~%~%================================================================================~%MSG: kurosp/Frame~%geometry_msgs/Point position~%Ypr rotation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: kurosp/Ypr~%float64 yaw~%float64 pitch~%float64 roll~%~%~%"))
+  (cl:format cl:nil "Trajectory trajectory~%~%================================================================================~%MSG: kurosp/Trajectory~%Info info~%Frame[] frames~%~%================================================================================~%MSG: kurosp/Info~%uint8 response_mode~%uint32 response_ms~%uint32 traj_id~%bool run~%uint32 vel~%uint32 tol~%uint8 frame_type~%~%================================================================================~%MSG: kurosp/Frame~%geometry_msgs/Point position~%Ypr orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: kurosp/Ypr~%float64 yaw~%float64 pitch~%float64 roll~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'SendTrajectory-request)))
   "Returns full string definition for message of type 'SendTrajectory-request"
-  (cl:format cl:nil "Trajectory trajectory~%~%================================================================================~%MSG: kurosp/Trajectory~%Info info~%Frame[] frames~%~%================================================================================~%MSG: kurosp/Info~%uint8 response_mode~%uint32 response_ms~%uint32 traj_id~%bool run~%uint32 vel~%uint32 tol~%uint8 frame_type~%~%================================================================================~%MSG: kurosp/Frame~%geometry_msgs/Point position~%Ypr rotation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: kurosp/Ypr~%float64 yaw~%float64 pitch~%float64 roll~%~%~%"))
+  (cl:format cl:nil "Trajectory trajectory~%~%================================================================================~%MSG: kurosp/Trajectory~%Info info~%Frame[] frames~%~%================================================================================~%MSG: kurosp/Info~%uint8 response_mode~%uint32 response_ms~%uint32 traj_id~%bool run~%uint32 vel~%uint32 tol~%uint8 frame_type~%~%================================================================================~%MSG: kurosp/Frame~%geometry_msgs/Point position~%Ypr orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: kurosp/Ypr~%float64 yaw~%float64 pitch~%float64 roll~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <SendTrajectory-request>))
   (cl:+ 0
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'trajectory))
@@ -101,10 +101,10 @@
   "kurosp/SendTrajectoryResponse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<SendTrajectory-response>)))
   "Returns md5sum for a message object of type '<SendTrajectory-response>"
-  "aab6c2231d5f57fac65036d46f1baeac")
+  "a869aa137664163ea9fbb56cdd307123")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'SendTrajectory-response)))
   "Returns md5sum for a message object of type 'SendTrajectory-response"
-  "aab6c2231d5f57fac65036d46f1baeac")
+  "a869aa137664163ea9fbb56cdd307123")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<SendTrajectory-response>)))
   "Returns full string definition for message of type '<SendTrajectory-response>"
   (cl:format cl:nil "bool success~%~%~%~%"))
