@@ -48,7 +48,7 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
-#include <kurosp/Trajectory.h>
+#include <kurosp/XyzYprTrajectory.h>
 
 namespace kurosp
 {
@@ -66,7 +66,7 @@ struct SendTrajectoryRequest_
 
 
 
-   typedef  ::kurosp::Trajectory_<ContainerAllocator>  _trajectory_type;
+   typedef  ::kurosp::XyzYprTrajectory_<ContainerAllocator>  _trajectory_type;
   _trajectory_type trajectory;
 
 
@@ -146,12 +146,12 @@ struct MD5Sum< ::kurosp::SendTrajectoryRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "4745e1e5e95d5a90576304f74b6f67d6";
+    return "ae5f28d08d9a50a9cf93f77fdd3565d1";
   }
 
   static const char* value(const ::kurosp::SendTrajectoryRequest_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x4745e1e5e95d5a90ULL;
-  static const uint64_t static_value2 = 0x576304f74b6f67d6ULL;
+  static const uint64_t static_value1 = 0xae5f28d08d9a50a9ULL;
+  static const uint64_t static_value2 = 0xcf93f77fdd3565d1ULL;
 };
 
 template<class ContainerAllocator>
@@ -170,40 +170,26 @@ struct Definition< ::kurosp::SendTrajectoryRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "Trajectory trajectory\n\
+    return "XyzYprTrajectory trajectory\n\
 \n\
 ================================================================================\n\
-MSG: kurosp/Trajectory\n\
+MSG: kurosp/XyzYprTrajectory\n\
 Info info\n\
-Frame[] frames\n\
+XyzYpr[] frames\n\
 \n\
 ================================================================================\n\
 MSG: kurosp/Info\n\
-uint8 response_mode\n\
-uint32 response_ms\n\
-uint32 traj_id\n\
-bool run\n\
-uint32 vel\n\
-uint32 tol\n\
-uint8 frame_type\n\
+uint8 response_mode #= 3 # KUKA_RMODE_STREAM\n\
+uint32 response_ms #= 20 # [ms]\n\
+uint32 traj_id #= 666 # a trajectory id\n\
+bool run #= 1 # YES\n\
+uint32 vel #= 200 # [mm/s]\n\
+uint32 tol #= 20 # [mm]\n\
+uint8 frame_type #= 1 # KUKA_CARTESIAN\n\
 \n\
 ================================================================================\n\
-MSG: kurosp/Frame\n\
-geometry_msgs/Point position\n\
-Ypr orientation\n\
-\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-\n\
-================================================================================\n\
-MSG: kurosp/Ypr\n\
-float64 yaw\n\
-float64 pitch\n\
-float64 roll\n\
+MSG: kurosp/XyzYpr\n\
+float64[6] xyzypr\n\
 ";
   }
 
@@ -243,7 +229,7 @@ struct Printer< ::kurosp::SendTrajectoryRequest_<ContainerAllocator> >
   {
     s << indent << "trajectory: ";
     s << std::endl;
-    Printer< ::kurosp::Trajectory_<ContainerAllocator> >::stream(s, indent + "  ", v.trajectory);
+    Printer< ::kurosp::XyzYprTrajectory_<ContainerAllocator> >::stream(s, indent + "  ", v.trajectory);
   }
 };
 

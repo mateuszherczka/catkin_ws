@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/mh/catkin_ws/build
 include kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir/progress.make
 
 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory:
-	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kurosp /home/mh/catkin_ws/src/kurosp/srv/SendTrajectory.srv geometry_msgs/Point:kurosp/Trajectory:kurosp/Ypr:kurosp/Frame:kurosp/Info
+	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py kurosp /home/mh/catkin_ws/src/kurosp/srv/SendTrajectory.srv kurosp/XyzYprTrajectory:kurosp/XyzYpr:kurosp/Info
 
 _kurosp_generate_messages_check_deps_SendTrajectory: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory
 _kurosp_generate_messages_check_deps_SendTrajectory: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir/build.make

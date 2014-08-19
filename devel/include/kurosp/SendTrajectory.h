@@ -73,7 +73,7 @@ template<>
 struct MD5Sum< ::kurosp::SendTrajectory > {
   static const char* value()
   {
-    return "a869aa137664163ea9fbb56cdd307123";
+    return "244e5565eb5f6feacf78a0491f04db4a";
   }
 
   static const char* value(const ::kurosp::SendTrajectory&) { return value(); }

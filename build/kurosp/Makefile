@@ -150,20 +150,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/rule:
-	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/rule
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/rule
-
-# Convenience name for target.
-_kurosp_generate_messages_check_deps_Frame: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/rule
-.PHONY : _kurosp_generate_messages_check_deps_Frame
-
-# fast build rule for target.
-_kurosp_generate_messages_check_deps_Frame/fast:
-	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/build
-.PHONY : _kurosp_generate_messages_check_deps_Frame/fast
-
-# Convenience name for target.
 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/rule:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/rule
 .PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/rule
@@ -192,32 +178,32 @@ _kurosp_generate_messages_check_deps_SendTrajectory/fast:
 .PHONY : _kurosp_generate_messages_check_deps_SendTrajectory/fast
 
 # Convenience name for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/rule:
-	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/rule
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/rule
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/rule
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/rule
 
 # Convenience name for target.
-_kurosp_generate_messages_check_deps_Trajectory: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/rule
-.PHONY : _kurosp_generate_messages_check_deps_Trajectory
+_kurosp_generate_messages_check_deps_XyzYpr: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/rule
+.PHONY : _kurosp_generate_messages_check_deps_XyzYpr
 
 # fast build rule for target.
-_kurosp_generate_messages_check_deps_Trajectory/fast:
-	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/build
-.PHONY : _kurosp_generate_messages_check_deps_Trajectory/fast
+_kurosp_generate_messages_check_deps_XyzYpr/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/build
+.PHONY : _kurosp_generate_messages_check_deps_XyzYpr/fast
 
 # Convenience name for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/rule:
-	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/rule
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/rule
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule
 
 # Convenience name for target.
-_kurosp_generate_messages_check_deps_Ypr: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/rule
-.PHONY : _kurosp_generate_messages_check_deps_Ypr
+_kurosp_generate_messages_check_deps_XyzYprTrajectory: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprTrajectory
 
 # fast build rule for target.
-_kurosp_generate_messages_check_deps_Ypr/fast:
-	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/build
-.PHONY : _kurosp_generate_messages_check_deps_Ypr/fast
+_kurosp_generate_messages_check_deps_XyzYprTrajectory/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprTrajectory/fast
 
 # Convenience name for target.
 kurosp/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
@@ -360,6 +346,34 @@ kurosp_genpy/fast:
 .PHONY : kurosp_genpy/fast
 
 # Convenience name for target.
+kurosp/CMakeFiles/send_traj_server.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/send_traj_server.dir/rule
+.PHONY : kurosp/CMakeFiles/send_traj_server.dir/rule
+
+# Convenience name for target.
+send_traj_server: kurosp/CMakeFiles/send_traj_server.dir/rule
+.PHONY : send_traj_server
+
+# fast build rule for target.
+send_traj_server/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/build
+.PHONY : send_traj_server/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/send_traj_testclient.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/send_traj_testclient.dir/rule
+.PHONY : kurosp/CMakeFiles/send_traj_testclient.dir/rule
+
+# Convenience name for target.
+send_traj_testclient: kurosp/CMakeFiles/send_traj_testclient.dir/rule
+.PHONY : send_traj_testclient
+
+# fast build rule for target.
+send_traj_testclient/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/build
+.PHONY : send_traj_testclient/fast
+
+# Convenience name for target.
 kurosp/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
 .PHONY : kurosp/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
@@ -401,17 +415,88 @@ trajectory_msgs_generate_messages_py/fast:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make kurosp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
 
+src/HandlingServer.o: src/HandlingServer.cpp.o
+.PHONY : src/HandlingServer.o
+
+# target to build an object file
+src/HandlingServer.cpp.o:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o
+.PHONY : src/HandlingServer.cpp.o
+
+src/HandlingServer.i: src/HandlingServer.cpp.i
+.PHONY : src/HandlingServer.i
+
+# target to preprocess a source file
+src/HandlingServer.cpp.i:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.i
+.PHONY : src/HandlingServer.cpp.i
+
+src/HandlingServer.s: src/HandlingServer.cpp.s
+.PHONY : src/HandlingServer.s
+
+# target to generate assembly for a file
+src/HandlingServer.cpp.s:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.s
+.PHONY : src/HandlingServer.cpp.s
+
+src/send_traj_server.o: src/send_traj_server.cpp.o
+.PHONY : src/send_traj_server.o
+
+# target to build an object file
+src/send_traj_server.cpp.o:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o
+.PHONY : src/send_traj_server.cpp.o
+
+src/send_traj_server.i: src/send_traj_server.cpp.i
+.PHONY : src/send_traj_server.i
+
+# target to preprocess a source file
+src/send_traj_server.cpp.i:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.i
+.PHONY : src/send_traj_server.cpp.i
+
+src/send_traj_server.s: src/send_traj_server.cpp.s
+.PHONY : src/send_traj_server.s
+
+# target to generate assembly for a file
+src/send_traj_server.cpp.s:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.s
+.PHONY : src/send_traj_server.cpp.s
+
+src/send_traj_testclient.o: src/send_traj_testclient.cpp.o
+.PHONY : src/send_traj_testclient.o
+
+# target to build an object file
+src/send_traj_testclient.cpp.o:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/src/send_traj_testclient.cpp.o
+.PHONY : src/send_traj_testclient.cpp.o
+
+src/send_traj_testclient.i: src/send_traj_testclient.cpp.i
+.PHONY : src/send_traj_testclient.i
+
+# target to preprocess a source file
+src/send_traj_testclient.cpp.i:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/src/send_traj_testclient.cpp.i
+.PHONY : src/send_traj_testclient.cpp.i
+
+src/send_traj_testclient.s: src/send_traj_testclient.cpp.s
+.PHONY : src/send_traj_testclient.s
+
+# target to generate assembly for a file
+src/send_traj_testclient.cpp.s:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/src/send_traj_testclient.cpp.s
+.PHONY : src/send_traj_testclient.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... _kurosp_generate_messages_check_deps_Frame"
 	@echo "... _kurosp_generate_messages_check_deps_Info"
 	@echo "... _kurosp_generate_messages_check_deps_SendTrajectory"
-	@echo "... _kurosp_generate_messages_check_deps_Trajectory"
-	@echo "... _kurosp_generate_messages_check_deps_Ypr"
+	@echo "... _kurosp_generate_messages_check_deps_XyzYpr"
+	@echo "... _kurosp_generate_messages_check_deps_XyzYprTrajectory"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
@@ -428,10 +513,21 @@ help:
 	@echo "... kurosp_genpy"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... send_traj_server"
+	@echo "... send_traj_testclient"
 	@echo "... test"
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... src/HandlingServer.o"
+	@echo "... src/HandlingServer.i"
+	@echo "... src/HandlingServer.s"
+	@echo "... src/send_traj_server.o"
+	@echo "... src/send_traj_server.i"
+	@echo "... src/send_traj_server.s"
+	@echo "... src/send_traj_testclient.o"
+	@echo "... src/send_traj_testclient.i"
+	@echo "... src/send_traj_testclient.s"
 .PHONY : help
 
 

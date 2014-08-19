@@ -461,8 +461,8 @@ clean: beginner_tutorials/CMakeFiles/beginner_tutorials_gencpp.dir/clean
 # Target rules for target beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir
 
 # All Build rule for target.
-beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/all: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/all: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/all
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/all: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/all: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/all
 	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/depend
 	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/build
@@ -498,9 +498,9 @@ clean: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/cl
 # Target rules for target beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir
 
 # All Build rule for target.
-beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_AddTwoInts.dir/all
-beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir/all
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_AddTwoInts.dir/all
 	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/depend
 	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  3 4
@@ -531,9 +531,9 @@ clean: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.di
 # Target rules for target beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir
 
 # All Build rule for target.
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir/all
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_AddTwoInts.dir/all
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir/all
 	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/depend
 	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  5 6
@@ -564,9 +564,9 @@ clean: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.d
 # Target rules for target beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir
 
 # All Build rule for target.
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir/all
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_AddTwoInts.dir/all
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/all
-beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/all: beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir/all
 	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/depend
 	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  7 8 9 10
@@ -662,7 +662,7 @@ clean: beginner_tutorials/CMakeFiles/beginner_tutorials_genpy.dir/clean
 beginner_tutorials/CMakeFiles/listener.dir/all:
 	$(MAKE) -f beginner_tutorials/CMakeFiles/listener.dir/build.make beginner_tutorials/CMakeFiles/listener.dir/depend
 	$(MAKE) -f beginner_tutorials/CMakeFiles/listener.dir/build.make beginner_tutorials/CMakeFiles/listener.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  30
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  27
 	@echo "Built target listener"
 .PHONY : beginner_tutorials/CMakeFiles/listener.dir/all
 
@@ -973,16 +973,16 @@ clean: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 # Target rules for target beginner_tutorials/CMakeFiles/talker.dir
 
 # All Build rule for target.
-beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all
 beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/all
+beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all
 beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/all
 beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/depend
 	$(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  31
@@ -1018,14 +1018,15 @@ clean: beginner_tutorials/CMakeFiles/talker.dir/clean
 
 # Convenience name for "all" pass in the directory.
 kurosp/all: kurosp/CMakeFiles/kurosp_generate_messages.dir/all
+kurosp/all: kurosp/CMakeFiles/send_traj_server.dir/all
+kurosp/all: kurosp/CMakeFiles/send_traj_testclient.dir/all
 .PHONY : kurosp/all
 
 # Convenience name for "clean" pass in the directory.
-kurosp/clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/clean
 kurosp/clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/clean
 kurosp/clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir/clean
-kurosp/clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/clean
-kurosp/clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/clean
+kurosp/clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/clean
+kurosp/clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/clean
 kurosp/clean: kurosp/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 kurosp/clean: kurosp/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 kurosp/clean: kurosp/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
@@ -1036,6 +1037,8 @@ kurosp/clean: kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/clean
 kurosp/clean: kurosp/CMakeFiles/kurosp_generate_messages_py.dir/clean
 kurosp/clean: kurosp/CMakeFiles/kurosp_genlisp.dir/clean
 kurosp/clean: kurosp/CMakeFiles/kurosp_genpy.dir/clean
+kurosp/clean: kurosp/CMakeFiles/send_traj_server.dir/clean
+kurosp/clean: kurosp/CMakeFiles/send_traj_testclient.dir/clean
 kurosp/clean: kurosp/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
 kurosp/clean: kurosp/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
 kurosp/clean: kurosp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
@@ -1044,37 +1047,6 @@ kurosp/clean: kurosp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
 # Convenience name for "preinstall" pass in the directory.
 kurosp/preinstall:
 .PHONY : kurosp/preinstall
-
-#=============================================================================
-# Target rules for target kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir
-
-# All Build rule for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/all:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/depend
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles 
-	@echo "Built target _kurosp_generate_messages_check_deps_Frame"
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/all
-
-# Build rule for subdir invocation for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/rule
-
-# Convenience name for target.
-_kurosp_generate_messages_check_deps_Frame: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/rule
-.PHONY : _kurosp_generate_messages_check_deps_Frame
-
-# clean rule for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/clean:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/clean
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/clean
-
-# clean rule for target.
-clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir
@@ -1139,65 +1111,65 @@ clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir
+# Target rules for target kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir
 
 # All Build rule for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/all:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/depend
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/build
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/all:
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/depend
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles 
-	@echo "Built target _kurosp_generate_messages_check_deps_Trajectory"
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/all
+	@echo "Built target _kurosp_generate_messages_check_deps_XyzYpr"
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/all
 
 # Build rule for subdir invocation for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/rule: cmake_check_build_system
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/rule
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/rule
 
 # Convenience name for target.
-_kurosp_generate_messages_check_deps_Trajectory: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/rule
-.PHONY : _kurosp_generate_messages_check_deps_Trajectory
+_kurosp_generate_messages_check_deps_XyzYpr: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/rule
+.PHONY : _kurosp_generate_messages_check_deps_XyzYpr
 
 # clean rule for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/clean:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/clean
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/clean
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/clean:
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/clean
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/clean
 
 # clean rule for target.
-clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/clean
+clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir
+# Target rules for target kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir
 
 # All Build rule for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/all:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/depend
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/build
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/all:
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/depend
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles 
-	@echo "Built target _kurosp_generate_messages_check_deps_Ypr"
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/all
+	@echo "Built target _kurosp_generate_messages_check_deps_XyzYprTrajectory"
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/all
 
 # Build rule for subdir invocation for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/rule: cmake_check_build_system
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/rule
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule
 
 # Convenience name for target.
-_kurosp_generate_messages_check_deps_Ypr: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/rule
-.PHONY : _kurosp_generate_messages_check_deps_Ypr
+_kurosp_generate_messages_check_deps_XyzYprTrajectory: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprTrajectory
 
 # clean rule for target.
-kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/clean:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/clean
-.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/clean
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/clean:
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/clean
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/clean
 
 # clean rule for target.
-clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/clean
+clean: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -1306,7 +1278,7 @@ kurosp/CMakeFiles/kurosp_gencpp.dir/all: kurosp/CMakeFiles/kurosp_generate_messa
 
 # Build rule for subdir invocation for target.
 kurosp/CMakeFiles/kurosp_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/kurosp_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
 .PHONY : kurosp/CMakeFiles/kurosp_gencpp.dir/rule
@@ -1329,8 +1301,8 @@ clean: kurosp/CMakeFiles/kurosp_gencpp.dir/clean
 
 # All Build rule for target.
 kurosp/CMakeFiles/kurosp_generate_messages.dir/all: kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages.dir/all: kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all
 kurosp/CMakeFiles/kurosp_generate_messages.dir/all: kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages.dir/all: kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all
 	$(MAKE) -f kurosp/CMakeFiles/kurosp_generate_messages.dir/build.make kurosp/CMakeFiles/kurosp_generate_messages.dir/depend
 	$(MAKE) -f kurosp/CMakeFiles/kurosp_generate_messages.dir/build.make kurosp/CMakeFiles/kurosp_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles 
@@ -1343,7 +1315,7 @@ all: kurosp/CMakeFiles/kurosp_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 kurosp/CMakeFiles/kurosp_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/kurosp_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
 .PHONY : kurosp/CMakeFiles/kurosp_generate_messages.dir/rule
@@ -1366,22 +1338,21 @@ clean: kurosp/CMakeFiles/kurosp_generate_messages.dir/clean
 
 # All Build rule for target.
 kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/all
 kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir/all
 kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/all
 	$(MAKE) -f kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/build.make kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/depend
 	$(MAKE) -f kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/build.make kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  13 14 15 16 17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  13 14 15 16
 	@echo "Built target kurosp_generate_messages_cpp"
 .PHONY : kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
 .PHONY : kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/rule
@@ -1404,22 +1375,21 @@ clean: kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/clean
 
 # All Build rule for target.
 kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
 kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/all
 	$(MAKE) -f kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/build.make kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/depend
 	$(MAKE) -f kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/build.make kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  18 19 20 21 22
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  17 18 19 20
 	@echo "Built target kurosp_generate_messages_lisp"
 .PHONY : kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
 .PHONY : kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/rule
@@ -1442,22 +1412,21 @@ clean: kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/clean
 
 # All Build rule for target.
 kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/all
-kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/all
 	$(MAKE) -f kurosp/CMakeFiles/kurosp_generate_messages_py.dir/build.make kurosp/CMakeFiles/kurosp_generate_messages_py.dir/depend
 	$(MAKE) -f kurosp/CMakeFiles/kurosp_generate_messages_py.dir/build.make kurosp/CMakeFiles/kurosp_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  23 24 25 26 27 28 29
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  21 22 23 24 25 26
 	@echo "Built target kurosp_generate_messages_py"
 .PHONY : kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 kurosp/CMakeFiles/kurosp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/kurosp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
 .PHONY : kurosp/CMakeFiles/kurosp_generate_messages_py.dir/rule
@@ -1488,7 +1457,7 @@ kurosp/CMakeFiles/kurosp_genlisp.dir/all: kurosp/CMakeFiles/kurosp_generate_mess
 
 # Build rule for subdir invocation for target.
 kurosp/CMakeFiles/kurosp_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/kurosp_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
 .PHONY : kurosp/CMakeFiles/kurosp_genlisp.dir/rule
@@ -1519,7 +1488,7 @@ kurosp/CMakeFiles/kurosp_genpy.dir/all: kurosp/CMakeFiles/kurosp_generate_messag
 
 # Build rule for subdir invocation for target.
 kurosp/CMakeFiles/kurosp_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/kurosp_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
 .PHONY : kurosp/CMakeFiles/kurosp_genpy.dir/rule
@@ -1535,6 +1504,76 @@ kurosp/CMakeFiles/kurosp_genpy.dir/clean:
 
 # clean rule for target.
 clean: kurosp/CMakeFiles/kurosp_genpy.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target kurosp/CMakeFiles/send_traj_server.dir
+
+# All Build rule for target.
+kurosp/CMakeFiles/send_traj_server.dir/all: kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all
+	$(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/depend
+	$(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  28 29
+	@echo "Built target send_traj_server"
+.PHONY : kurosp/CMakeFiles/send_traj_server.dir/all
+
+# Include target in all.
+all: kurosp/CMakeFiles/send_traj_server.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+kurosp/CMakeFiles/send_traj_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/send_traj_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
+.PHONY : kurosp/CMakeFiles/send_traj_server.dir/rule
+
+# Convenience name for target.
+send_traj_server: kurosp/CMakeFiles/send_traj_server.dir/rule
+.PHONY : send_traj_server
+
+# clean rule for target.
+kurosp/CMakeFiles/send_traj_server.dir/clean:
+	$(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/clean
+.PHONY : kurosp/CMakeFiles/send_traj_server.dir/clean
+
+# clean rule for target.
+clean: kurosp/CMakeFiles/send_traj_server.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target kurosp/CMakeFiles/send_traj_testclient.dir
+
+# All Build rule for target.
+kurosp/CMakeFiles/send_traj_testclient.dir/all: kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/all
+	$(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/depend
+	$(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles  30
+	@echo "Built target send_traj_testclient"
+.PHONY : kurosp/CMakeFiles/send_traj_testclient.dir/all
+
+# Include target in all.
+all: kurosp/CMakeFiles/send_traj_testclient.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+kurosp/CMakeFiles/send_traj_testclient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/send_traj_testclient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/catkin_ws/build/CMakeFiles 0
+.PHONY : kurosp/CMakeFiles/send_traj_testclient.dir/rule
+
+# Convenience name for target.
+send_traj_testclient: kurosp/CMakeFiles/send_traj_testclient.dir/rule
+.PHONY : send_traj_testclient
+
+# clean rule for target.
+kurosp/CMakeFiles/send_traj_testclient.dir/clean:
+	$(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/clean
+.PHONY : kurosp/CMakeFiles/send_traj_testclient.dir/clean
+
+# clean rule for target.
+clean: kurosp/CMakeFiles/send_traj_testclient.dir/clean
 .PHONY : clean
 
 #=============================================================================

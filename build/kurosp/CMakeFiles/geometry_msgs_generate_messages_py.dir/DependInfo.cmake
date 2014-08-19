@@ -17,7 +17,11 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/mh/catkin_ws/devel/include"
+  "/home/mh/catkin_ws/src/kurosp/include"
+  "/home/mh/catkin_ws/src/kurosp/include/kurosp"
   "/opt/ros/indigo/include"
+  "/home/mh/dev/kuros03/include"
+  "/home/mh/Libraries/tinyXml2/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

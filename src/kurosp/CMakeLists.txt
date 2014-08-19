@@ -13,8 +13,8 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
-
+find_package(Boost REQUIRED COMPONENTS system thread)
+#find_package(Boost REQUIRED COMPONENTS thread)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -48,10 +48,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
-  Frame.msg
   Info.msg
-  Trajectory.msg
-  Ypr.msg
+  XyzYpr.msg
+  XyzYprTrajectory.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -85,10 +84,10 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES kurosp
-#  CATKIN_DEPENDS geometry_msgs roscpp std_msgs trajectory_msgs
-#  DEPENDS system_lib
+# INCLUDE_DIRS include include/kurosp/ /home/mh/dev/kuros03/include/ /home/mh/Libraries/tinyXml2/include/
+# LIBRARIES kurosp libkuros.a libtinyxml2.a
+#    CATKIN_DEPENDS geometry_msgs roscpp std_msgs trajectory_msgs
+#    DEPENDS system_lib
 )
 
 ###########
@@ -99,7 +98,12 @@ catkin_package(
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(
-  ${catkin_INCLUDE_DIRS}
+    include
+    include/kurosp/
+    ${Boost_INCLUDE_DIRS}
+    ${catkin_INCLUDE_DIRS}
+    /home/mh/dev/kuros03/include/
+    /home/mh/Libraries/tinyXml2/include/
 )
 
 ## Declare a cpp library
@@ -108,16 +112,41 @@ include_directories(
 # )
 
 ## Declare a cpp executable
-# add_executable(kurosp_node src/kurosp_node.cpp)
+add_executable(
+    send_traj_server
+    src/send_traj_server.cpp
+    src/HandlingServer.cpp
+)
+
+add_executable(
+    send_traj_testclient
+    src/send_traj_testclient.cpp
+)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(kurosp_node kurosp_generate_messages_cpp)
+add_dependencies(send_traj_server kurosp_generate_messages_cpp)
+
+add_dependencies(send_traj_testclient kurosp_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(kurosp_node
-#   ${catkin_LIBRARIES}
-# )
+target_link_libraries(send_traj_server
+    ${catkin_LIBRARIES}
+    ${Boost_LIBRARIES}
+    boost_system
+    boost_thread
+    /home/mh/Libraries/tinyXml2/lib/libtinyxml2.a
+    /home/mh/dev/kuros03/bin/Release/libkuros.a
+    )
+
+target_link_libraries(send_traj_testclient
+    ${catkin_LIBRARIES}
+    #${Boost_LIBRARIES}
+    #boost_system
+    #boost_thread
+    #/home/mh/Libraries/tinyXml2/lib/libtinyxml2.a
+    #/home/mh/dev/kuros03/bin/Release/libkuros.a
+    )
 
 #############
 ## Install ##

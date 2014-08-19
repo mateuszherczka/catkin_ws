@@ -514,19 +514,6 @@ talker/fast:
 .PHONY : talker/fast
 
 #=============================================================================
-# Target rules for targets named _kurosp_generate_messages_check_deps_Frame
-
-# Build rule for target.
-_kurosp_generate_messages_check_deps_Frame: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _kurosp_generate_messages_check_deps_Frame
-.PHONY : _kurosp_generate_messages_check_deps_Frame
-
-# fast build rule for target.
-_kurosp_generate_messages_check_deps_Frame/fast:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Frame.dir/build
-.PHONY : _kurosp_generate_messages_check_deps_Frame/fast
-
-#=============================================================================
 # Target rules for targets named _kurosp_generate_messages_check_deps_Info
 
 # Build rule for target.
@@ -553,30 +540,30 @@ _kurosp_generate_messages_check_deps_SendTrajectory/fast:
 .PHONY : _kurosp_generate_messages_check_deps_SendTrajectory/fast
 
 #=============================================================================
-# Target rules for targets named _kurosp_generate_messages_check_deps_Trajectory
+# Target rules for targets named _kurosp_generate_messages_check_deps_XyzYpr
 
 # Build rule for target.
-_kurosp_generate_messages_check_deps_Trajectory: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _kurosp_generate_messages_check_deps_Trajectory
-.PHONY : _kurosp_generate_messages_check_deps_Trajectory
+_kurosp_generate_messages_check_deps_XyzYpr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _kurosp_generate_messages_check_deps_XyzYpr
+.PHONY : _kurosp_generate_messages_check_deps_XyzYpr
 
 # fast build rule for target.
-_kurosp_generate_messages_check_deps_Trajectory/fast:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Trajectory.dir/build
-.PHONY : _kurosp_generate_messages_check_deps_Trajectory/fast
+_kurosp_generate_messages_check_deps_XyzYpr/fast:
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir/build
+.PHONY : _kurosp_generate_messages_check_deps_XyzYpr/fast
 
 #=============================================================================
-# Target rules for targets named _kurosp_generate_messages_check_deps_Ypr
+# Target rules for targets named _kurosp_generate_messages_check_deps_XyzYprTrajectory
 
 # Build rule for target.
-_kurosp_generate_messages_check_deps_Ypr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _kurosp_generate_messages_check_deps_Ypr
-.PHONY : _kurosp_generate_messages_check_deps_Ypr
+_kurosp_generate_messages_check_deps_XyzYprTrajectory: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _kurosp_generate_messages_check_deps_XyzYprTrajectory
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprTrajectory
 
 # fast build rule for target.
-_kurosp_generate_messages_check_deps_Ypr/fast:
-	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Ypr.dir/build
-.PHONY : _kurosp_generate_messages_check_deps_Ypr/fast
+_kurosp_generate_messages_check_deps_XyzYprTrajectory/fast:
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprTrajectory/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
@@ -709,6 +696,32 @@ kurosp_genpy/fast:
 .PHONY : kurosp_genpy/fast
 
 #=============================================================================
+# Target rules for targets named send_traj_server
+
+# Build rule for target.
+send_traj_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 send_traj_server
+.PHONY : send_traj_server
+
+# fast build rule for target.
+send_traj_server/fast:
+	$(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/build
+.PHONY : send_traj_server/fast
+
+#=============================================================================
+# Target rules for targets named send_traj_testclient
+
+# Build rule for target.
+send_traj_testclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 send_traj_testclient
+.PHONY : send_traj_testclient
+
+# fast build rule for target.
+send_traj_testclient/fast:
+	$(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/build
+.PHONY : send_traj_testclient/fast
+
+#=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -788,11 +801,10 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... talker"
-	@echo "... _kurosp_generate_messages_check_deps_Frame"
 	@echo "... _kurosp_generate_messages_check_deps_Info"
 	@echo "... _kurosp_generate_messages_check_deps_SendTrajectory"
-	@echo "... _kurosp_generate_messages_check_deps_Trajectory"
-	@echo "... _kurosp_generate_messages_check_deps_Ypr"
+	@echo "... _kurosp_generate_messages_check_deps_XyzYpr"
+	@echo "... _kurosp_generate_messages_check_deps_XyzYprTrajectory"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -803,6 +815,8 @@ help:
 	@echo "... kurosp_generate_messages_py"
 	@echo "... kurosp_genlisp"
 	@echo "... kurosp_genpy"
+	@echo "... send_traj_server"
+	@echo "... send_traj_testclient"
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_py"

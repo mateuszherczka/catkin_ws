@@ -34,10 +34,9 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kurosp/msg" TYPE FILE FILES
-    "/home/mh/catkin_ws/src/kurosp/msg/Frame.msg"
     "/home/mh/catkin_ws/src/kurosp/msg/Info.msg"
-    "/home/mh/catkin_ws/src/kurosp/msg/Trajectory.msg"
-    "/home/mh/catkin_ws/src/kurosp/msg/Ypr.msg"
+    "/home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg"
+    "/home/mh/catkin_ws/src/kurosp/msg/XyzYprTrajectory.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

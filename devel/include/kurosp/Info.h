@@ -199,13 +199,13 @@ struct Definition< ::kurosp::Info_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "uint8 response_mode\n\
-uint32 response_ms\n\
-uint32 traj_id\n\
-bool run\n\
-uint32 vel\n\
-uint32 tol\n\
-uint8 frame_type\n\
+    return "uint8 response_mode #= 3 # KUKA_RMODE_STREAM\n\
+uint32 response_ms #= 20 # [ms]\n\
+uint32 traj_id #= 666 # a trajectory id\n\
+bool run #= 1 # YES\n\
+uint32 vel #= 200 # [mm/s]\n\
+uint32 tol #= 20 # [mm]\n\
+uint8 frame_type #= 1 # KUKA_CARTESIAN\n\
 ";
   }
 

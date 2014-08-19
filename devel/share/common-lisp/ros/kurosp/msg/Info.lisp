@@ -145,10 +145,10 @@
   "e7be2d7c158064f808f034be3a19e5b8")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<Info>)))
   "Returns full string definition for message of type '<Info>"
-  (cl:format cl:nil "uint8 response_mode~%uint32 response_ms~%uint32 traj_id~%bool run~%uint32 vel~%uint32 tol~%uint8 frame_type~%~%~%"))
+  (cl:format cl:nil "uint8 response_mode #= 3 # KUKA_RMODE_STREAM~%uint32 response_ms #= 20 # [ms]~%uint32 traj_id #= 666 # a trajectory id~%bool run #= 1 # YES~%uint32 vel #= 200 # [mm/s]~%uint32 tol #= 20 # [mm]~%uint8 frame_type #= 1 # KUKA_CARTESIAN~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'Info)))
   "Returns full string definition for message of type 'Info"
-  (cl:format cl:nil "uint8 response_mode~%uint32 response_ms~%uint32 traj_id~%bool run~%uint32 vel~%uint32 tol~%uint8 frame_type~%~%~%"))
+  (cl:format cl:nil "uint8 response_mode #= 3 # KUKA_RMODE_STREAM~%uint32 response_ms #= 20 # [ms]~%uint32 traj_id #= 666 # a trajectory id~%bool run #= 1 # YES~%uint32 vel #= 200 # [mm/s]~%uint32 tol #= 20 # [mm]~%uint8 frame_type #= 1 # KUKA_CARTESIAN~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <Info>))
   (cl:+ 0
      1

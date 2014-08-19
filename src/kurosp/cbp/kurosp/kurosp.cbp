@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="kurosp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/kurosp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/kurosp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../CMakeLists.txt" />
+		<Unit filename="../../include/kurosp/HandlingServer.hpp" />
+		<Unit filename="../../msg/Frame.msg" />
+		<Unit filename="../../msg/Info.msg" />
+		<Unit filename="../../msg/Trajectory.msg" />
+		<Unit filename="../../msg/XyzYpr.msg" />
+		<Unit filename="../../msg/XyzYprTrajectory.msg" />
+		<Unit filename="../../msg/Ypr.msg" />
+		<Unit filename="../../package.xml" />
+		<Unit filename="../../src/HandlingServer.cpp" />
+		<Unit filename="../../src/send_traj_server.cpp" />
+		<Unit filename="../../src/send_traj_testclient.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../../srv/SendTrajectory.srv" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

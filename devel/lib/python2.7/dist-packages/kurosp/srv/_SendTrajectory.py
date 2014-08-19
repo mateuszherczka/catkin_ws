@@ -4,51 +4,36 @@ python3 = True if sys.hexversion > 0x03000000 else False
 import genpy
 import struct
 
-import geometry_msgs.msg
 import kurosp.msg
 
 class SendTrajectoryRequest(genpy.Message):
-  _md5sum = "4745e1e5e95d5a90576304f74b6f67d6"
+  _md5sum = "ae5f28d08d9a50a9cf93f77fdd3565d1"
   _type = "kurosp/SendTrajectoryRequest"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """Trajectory trajectory
+  _full_text = """XyzYprTrajectory trajectory
 
 ================================================================================
-MSG: kurosp/Trajectory
+MSG: kurosp/XyzYprTrajectory
 Info info
-Frame[] frames
+XyzYpr[] frames
 
 ================================================================================
 MSG: kurosp/Info
-uint8 response_mode
-uint32 response_ms
-uint32 traj_id
-bool run
-uint32 vel
-uint32 tol
-uint8 frame_type
+uint8 response_mode #= 3 # KUKA_RMODE_STREAM
+uint32 response_ms #= 20 # [ms]
+uint32 traj_id #= 666 # a trajectory id
+bool run #= 1 # YES
+uint32 vel #= 200 # [mm/s]
+uint32 tol #= 20 # [mm]
+uint8 frame_type #= 1 # KUKA_CARTESIAN
 
 ================================================================================
-MSG: kurosp/Frame
-geometry_msgs/Point position
-Ypr orientation
-
-================================================================================
-MSG: geometry_msgs/Point
-# This contains the position of a point in free space
-float64 x
-float64 y
-float64 z
-
-================================================================================
-MSG: kurosp/Ypr
-float64 yaw
-float64 pitch
-float64 roll
+MSG: kurosp/XyzYpr
+float64[6] xyzypr
 
 """
   __slots__ = ['trajectory']
-  _slot_types = ['kurosp/Trajectory']
+  _slot_types = ['kurosp/XyzYprTrajectory']
 
   def __init__(self, *args, **kwds):
     """
@@ -68,9 +53,9 @@ float64 roll
       super(SendTrajectoryRequest, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.trajectory is None:
-        self.trajectory = kurosp.msg.Trajectory()
+        self.trajectory = kurosp.msg.XyzYprTrajectory()
     else:
-      self.trajectory = kurosp.msg.Trajectory()
+      self.trajectory = kurosp.msg.XyzYprTrajectory()
 
   def _get_types(self):
     """
@@ -89,12 +74,7 @@ float64 roll
       length = len(self.trajectory.frames)
       buff.write(_struct_I.pack(length))
       for val1 in self.trajectory.frames:
-        _v1 = val1.position
-        _x = _v1
-        buff.write(_struct_3d.pack(_x.x, _x.y, _x.z))
-        _v2 = val1.orientation
-        _x = _v2
-        buff.write(_struct_3d.pack(_x.yaw, _x.pitch, _x.roll))
+        buff.write(_struct_6d.pack(*val1.xyzypr))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -105,7 +85,7 @@ float64 roll
     """
     try:
       if self.trajectory is None:
-        self.trajectory = kurosp.msg.Trajectory()
+        self.trajectory = kurosp.msg.XyzYprTrajectory()
       end = 0
       _x = self
       start = end
@@ -117,17 +97,10 @@ float64 roll
       (length,) = _struct_I.unpack(str[start:end])
       self.trajectory.frames = []
       for i in range(0, length):
-        val1 = kurosp.msg.Frame()
-        _v3 = val1.position
-        _x = _v3
+        val1 = kurosp.msg.XyzYpr()
         start = end
-        end += 24
-        (_x.x, _x.y, _x.z,) = _struct_3d.unpack(str[start:end])
-        _v4 = val1.orientation
-        _x = _v4
-        start = end
-        end += 24
-        (_x.yaw, _x.pitch, _x.roll,) = _struct_3d.unpack(str[start:end])
+        end += 48
+        val1.xyzypr = _struct_6d.unpack(str[start:end])
         self.trajectory.frames.append(val1)
       return self
     except struct.error as e:
@@ -146,12 +119,7 @@ float64 roll
       length = len(self.trajectory.frames)
       buff.write(_struct_I.pack(length))
       for val1 in self.trajectory.frames:
-        _v5 = val1.position
-        _x = _v5
-        buff.write(_struct_3d.pack(_x.x, _x.y, _x.z))
-        _v6 = val1.orientation
-        _x = _v6
-        buff.write(_struct_3d.pack(_x.yaw, _x.pitch, _x.roll))
+        buff.write(val1.xyzypr.tostring())
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -163,7 +131,7 @@ float64 roll
     """
     try:
       if self.trajectory is None:
-        self.trajectory = kurosp.msg.Trajectory()
+        self.trajectory = kurosp.msg.XyzYprTrajectory()
       end = 0
       _x = self
       start = end
@@ -175,24 +143,17 @@ float64 roll
       (length,) = _struct_I.unpack(str[start:end])
       self.trajectory.frames = []
       for i in range(0, length):
-        val1 = kurosp.msg.Frame()
-        _v7 = val1.position
-        _x = _v7
+        val1 = kurosp.msg.XyzYpr()
         start = end
-        end += 24
-        (_x.x, _x.y, _x.z,) = _struct_3d.unpack(str[start:end])
-        _v8 = val1.orientation
-        _x = _v8
-        start = end
-        end += 24
-        (_x.yaw, _x.pitch, _x.roll,) = _struct_3d.unpack(str[start:end])
+        end += 48
+        val1.xyzypr = numpy.frombuffer(str[start:end], dtype=numpy.float64, count=6)
         self.trajectory.frames.append(val1)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_3d = struct.Struct("<3d")
+_struct_6d = struct.Struct("<6d")
 _struct_B2IB2IB = struct.Struct("<B2IB2IB")
 """autogenerated by genpy from kurosp/SendTrajectoryResponse.msg. Do not edit."""
 import sys
@@ -297,6 +258,6 @@ _struct_I = genpy.struct_I
 _struct_B = struct.Struct("<B")
 class SendTrajectory(object):
   _type          = 'kurosp/SendTrajectory'
-  _md5sum = 'a869aa137664163ea9fbb56cdd307123'
+  _md5sum = '244e5565eb5f6feacf78a0491f04db4a'
   _request_class  = SendTrajectoryRequest
   _response_class = SendTrajectoryResponse

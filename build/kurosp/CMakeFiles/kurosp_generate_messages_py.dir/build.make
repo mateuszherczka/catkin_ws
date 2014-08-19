@@ -45,80 +45,64 @@ CMAKE_BINARY_DIR = /home/mh/catkin_ws/build
 # Include the progress variables for this target.
 include kurosp/CMakeFiles/kurosp_generate_messages_py.dir/progress.make
 
+kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py
 kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Info.py
-kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Ypr.py
-kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Frame.py
-kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py
+kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYpr.py
 kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py
 kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py
 kurosp/CMakeFiles/kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py
 
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/XyzYprTrajectory.msg
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Info.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG kurosp/XyzYprTrajectory"
+	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mh/catkin_ws/src/kurosp/msg/XyzYprTrajectory.msg -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg
+
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Info.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Info.py: /home/mh/catkin_ws/src/kurosp/msg/Info.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG kurosp/Info"
 	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mh/catkin_ws/src/kurosp/msg/Info.msg -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg
 
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Ypr.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Ypr.py: /home/mh/catkin_ws/src/kurosp/msg/Ypr.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG kurosp/Ypr"
-	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mh/catkin_ws/src/kurosp/msg/Ypr.msg -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg
-
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Frame.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Frame.py: /home/mh/catkin_ws/src/kurosp/msg/Frame.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Frame.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Frame.py: /home/mh/catkin_ws/src/kurosp/msg/Ypr.msg
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYpr.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYpr.py: /home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG kurosp/Frame"
-	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mh/catkin_ws/src/kurosp/msg/Frame.msg -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg
-
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Trajectory.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Ypr.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Frame.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Info.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG kurosp/Trajectory"
-	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mh/catkin_ws/src/kurosp/msg/Trajectory.msg -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG kurosp/XyzYpr"
+	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg
 
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /home/mh/catkin_ws/src/kurosp/srv/SendTrajectory.srv
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Trajectory.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Ypr.msg
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Frame.msg
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/XyzYprTrajectory.msg
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py: /home/mh/catkin_ws/src/kurosp/msg/Info.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV kurosp/SendTrajectory"
 	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/mh/catkin_ws/src/kurosp/srv/SendTrajectory.srv -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv
 
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Info.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Ypr.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Frame.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYpr.py
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for kurosp"
 	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg --initpy
 
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Info.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Ypr.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Frame.py
-/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py
+/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYpr.py
 /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for kurosp"
 	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv --initpy
 
 kurosp_generate_messages_py: kurosp/CMakeFiles/kurosp_generate_messages_py
+kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py
 kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Info.py
-kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Ypr.py
-kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Frame.py
-kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Trajectory.py
+kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYpr.py
 kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py
 kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py
 kurosp_generate_messages_py: /home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py

@@ -4,67 +4,104 @@
 #include "kuros.h"
 #include "HandlingServer.hpp"
 
-
-// create the kuros server
+/*
 HandlingServer kserver;
-
-/**
-The servicing function.
-TODO: how about putting this inside HandlingServer?
 */
-bool send(kurosp::SendTrajectory::Request &req,
-          kurosp::SendTrajectory::Request &res)
+
+void printTrajectory(const info_vec &info, const trajectory_vec &trajectory)
 {
-    if (!kserver.isAccepting())
+    ROS_INFO("============================");
+    ROS_INFO("info: %d %d %d %d %d %d %d",
+             info[KUKA_RMODE],
+             info[KUKA_RMS],
+             info[KUKA_TRAJID],
+             info[KUKA_RUN],
+             info[KUKA_VEL],
+             info[KUKA_TOL],
+             info[KUKA_FRAMETYPE]
+            );
+    ROS_INFO("----------------------------");
+    for (size_t i = 0; i < trajectory.size(); ++i )
+    {
+        frame_vec frame = trajectory[i];
+        ROS_INFO("frame: %f %f %f %f %f %f",
+             frame[0],
+             frame[1],
+             frame[2],
+             frame[3],
+             frame[4],
+             frame[5]
+            );
+    }
+    ROS_INFO("============================");
+}
+
+bool sendService(kurosp::SendTrajectory::Request &req,
+                 kurosp::SendTrajectory::Response &res)
+{
+    /*
+    if (!kserver.isAccepting()) // don't send if server is not connected to robot
     {
         res.success = false;
-        return false; // should we return true anyway?
+        return true; // TODO: should we return true or false here?
     }
+    */
 
     // empty trajectory vector
     trajectory_vec trajectory;
 
-    // TODO: what is the most efficient way to move the data?
-    int trajsize = req.frames.size();
-    for (int i = 0; i < trajsize; ++i)  // for each frame
-    {
-        trajectory.push_back(frame_vec {   req.frames[i].position.x,
-                                           req.frames[i].position.y,
-                                           req.frames[i].position.z,
-                                           req.frames[i].orientation.yaw,
-                                           req.frames[i].orientation.pitch,
-                                           req.frames[i].orientation.roll
-                                       });
+    // copy the frames
+    int trajSize = req.trajectory.frames.size();
 
+    for (int i = 0; i < trajSize; ++i)
+    {
+        frame_vec frame(KUKA_FRAME_SIZE);
+
+        frame[KUKA_FRAME_X] = req.trajectory.frames[i].xyzypr[KUKA_FRAME_X];
+        frame[KUKA_FRAME_Y] = req.trajectory.frames[i].xyzypr[KUKA_FRAME_Y];
+        frame[KUKA_FRAME_Z] = req.trajectory.frames[i].xyzypr[KUKA_FRAME_Z];
+        frame[KUKA_FRAME_A] = req.trajectory.frames[i].xyzypr[KUKA_FRAME_A];
+        frame[KUKA_FRAME_B] = req.trajectory.frames[i].xyzypr[KUKA_FRAME_B];
+        frame[KUKA_FRAME_C] = req.trajectory.frames[i].xyzypr[KUKA_FRAME_C];
+
+        trajectory.push_back(frame);
     }
 
+    // copy the info
     info_vec info(KUKA_INFO_SIZE);
-    info[KUKA_RMODE] = req.info.response_mode;
-    info[KUKA_RMS] = req.info.response_ms;
-    info[KUKA_TRAJID] = req.info.traj_id;
-    info[KUKA_RUN] = req.info.run;
-    info[KUKA_VEL] = req.info.vel;
-    info[KUKA_TOL] = req.info.tol;
-    info[KUKA_FRAMETYPE] = req.info.frametype;
+    info[KUKA_RMODE] = req.trajectory.info.response_mode;
+    info[KUKA_RMS] = req.trajectory.info.response_ms;
+    info[KUKA_TRAJID] = req.trajectory.info.traj_id;
+    info[KUKA_RUN] = req.trajectory.info.run;
+    info[KUKA_VEL] = req.trajectory.info.vel;
+    info[KUKA_TOL] = req.trajectory.info.tol;
+    info[KUKA_FRAMETYPE] = req.trajectory.info.frame_type;
 
+    // non-blocking send
+    /*
     kserver.sendTrajectory(info, trajectory);
+    */
+    cout << "Printing trajectory." << endl;
+    printTrajectory(info, trajectory);
 
     res.success = true;
     return true;
 }
 
 
+
+
 int main(int argc, char **argv)
 {
-
-    HandlingServer kserver;
-    kserver.setReconnect(true);
+    /*
+    kserver.setReconnect(true); // start listening again if connection breaks
     kserver.startListening();
+    */
 
     ros::init(argc, argv, "send_trajectory_server");
     ros::NodeHandle n;
 
-    ros::ServiceServer service = n.advertiseService("send_trajectory", send);
+    ros::ServiceServer service = n.advertiseService("send_trajectory", sendService);
 
     ROS_INFO("Ready to send trajectory to Kuka.");
 
@@ -72,3 +109,4 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
