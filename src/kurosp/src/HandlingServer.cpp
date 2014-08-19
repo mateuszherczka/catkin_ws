@@ -3,7 +3,7 @@
 HandlingServer::HandlingServer() :
     handledCount(0)
 {
-    //ctor
+
 }
 
 HandlingServer::~HandlingServer()
@@ -14,19 +14,36 @@ HandlingServer::~HandlingServer()
 void HandlingServer::handleResponse(const KukaResponse &response)
 {
 
-    cout << "------------------------------------------------" << endl;
-    cout << "Response #" << handledCount << endl;
+    kurosp::XyzYpr carMsg;
 
-    response.printValues();
+    for (size_t i = 0; i < response.frame.size(); ++i)
+    {
+        carMsg.xyzypr[i] = response.frame[i];
+    }
 
-    cout << "------------------------------------------------" << endl;
+    carState.publish(carMsg);
+
+    sensor_msgs::JointState jsMsg;
+
+    for (size_t i = 0; i < response.axis.size(); ++i)
+    {
+        jsMsg.position.push_back(response.axis[i]);
+    }
+
+    jointState.publish(jsMsg);
 
     ++handledCount;
 }
 
 void HandlingServer::handleDisconnect()
 {
-    cout << "------------------------------------------------" << endl;
-    cout << "HandlingServer: Ending session." << endl;
-    cout << "------------------------------------------------" << endl;
+//    cout << "------------------------------------------------" << endl;
+//    cout << "HandlingServer: Ending session." << endl;
+//    cout << "------------------------------------------------" << endl;
+}
+
+void HandlingServer::createPublishers(ros::NodeHandle &n)
+{
+    carState = n.advertise<kurosp::XyzYpr>("kuka_cartesian_state", 1000);
+    jointState = n.advertise<sensor_msgs::JointState>("kuka_joint_state", 1000);
 }

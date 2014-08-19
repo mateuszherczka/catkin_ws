@@ -6,6 +6,13 @@
 #include "ros/ros.h"
 #include "kurosp/SendTrajectory.h"
 
+#include "sensor_msgs/JointState.h"
+
+#include <boost/shared_ptr.hpp>
+
+//typedef boost::shared_ptr<ros::Publisher> pub_ptr;
+
+
 class HandlingServer : public Server
 {
     public:
@@ -14,17 +21,23 @@ class HandlingServer : public Server
 
         /*
         Handles incoming messages from robot.
-        We have access to response object in server.
+        We have access to response object in server and its members:
+
+        response.info
+        response.frame
+        response.axis
+
         */
         void handleResponse(const KukaResponse &response);// override;
         void handleDisconnect(); // override;
 
-        bool sendService(kurosp::SendTrajectory::Request &req,
-        kurosp::SendTrajectory::Response &res);
+        void createPublishers(ros::NodeHandle &n);
 
     protected:
     private:
 
+        ros::Publisher carState;
+        ros::Publisher jointState;
         int handledCount;
 };
 

@@ -1,13 +1,19 @@
 #include "ros/ros.h"
 #include "kurosp/SendTrajectory.h"
 
+#include "sensor_msgs/JointState.h"
+
 #include "kuros.h"
 #include "HandlingServer.hpp"
 
-/*
-HandlingServer kserver;
-*/
+//typedef boost::shared_ptr<ros::Publisher> pub_ptr;
 
+// create server and load ServerConfig.xml
+HandlingServer kserver;
+
+/**
+If you want, print the incoming trajectory to console.
+*/
 void printTrajectory(const info_vec &info, const trajectory_vec &trajectory)
 {
     ROS_INFO("============================");
@@ -36,16 +42,17 @@ void printTrajectory(const info_vec &info, const trajectory_vec &trajectory)
     ROS_INFO("============================");
 }
 
+/**
+Copy incoming values and send them to robot.
+*/
 bool sendService(kurosp::SendTrajectory::Request &req,
                  kurosp::SendTrajectory::Response &res)
 {
-    /*
     if (!kserver.isAccepting()) // don't send if server is not connected to robot
     {
         res.success = false;
-        return true; // TODO: should we return true or false here?
+        return true;
     }
-    */
 
     // empty trajectory vector
     trajectory_vec trajectory;
@@ -78,30 +85,37 @@ bool sendService(kurosp::SendTrajectory::Request &req,
     info[KUKA_FRAMETYPE] = req.trajectory.info.frame_type;
 
     // non-blocking send
-    /*
     kserver.sendTrajectory(info, trajectory);
-    */
-    cout << "Printing trajectory." << endl;
-    printTrajectory(info, trajectory);
+
+//    cout << "Printing trajectory." << endl;
+//    printTrajectory(info, trajectory);
 
     res.success = true;
     return true;
 }
 
 
-
-
 int main(int argc, char **argv)
 {
-    /*
+    // start the server
     kserver.setReconnect(true); // start listening again if connection breaks
     kserver.startListening();
-    */
 
+    // init ROS
     ros::init(argc, argv, "send_trajectory_server");
     ros::NodeHandle n;
 
+    // advertise service
     ros::ServiceServer service = n.advertiseService("send_trajectory", sendService);
+
+    kserver.createPublishers(n);
+
+    // advertise publishers
+    //ros::Publisher cartesian_pub = n.advertise<kurosp::XyzYpr>("kuka_cartesian_state", 1000);
+    //ros::Publisher jointstate_pub = n.advertise<sensor_msgs::JointState>("kuka_joint_state", 1000);
+
+    //kserver.carState.reset(cartesian_pub);
+    //kserver.jointState = n.advertise<sensor_msgs::JointState>("kuka_joint_state", 1000);
 
     ROS_INFO("Ready to send trajectory to Kuka.");
 

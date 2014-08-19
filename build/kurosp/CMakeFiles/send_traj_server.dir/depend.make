@@ -76,6 +76,8 @@ kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /opt/ros/indigo
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /opt/ros/indigo/include/ros/wall_timer.h
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /opt/ros/indigo/include/ros/wall_timer_options.h
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /opt/ros/indigo/include/rosconsole/macros_generated.h
+kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /opt/ros/indigo/include/sensor_msgs/JointState.h
+kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
 
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/Libraries/tinyXml2/include/tinyxml2.h
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/Info.h
@@ -152,4 +154,6 @@ kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /opt/ros/indi
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /opt/ros/indigo/include/ros/wall_timer.h
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /opt/ros/indigo/include/ros/wall_timer_options.h
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /opt/ros/indigo/include/rosconsole/macros_generated.h
+kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /opt/ros/indigo/include/sensor_msgs/JointState.h
+kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
 
