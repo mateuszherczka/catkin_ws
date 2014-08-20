@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_BlockSendTrajectory.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_BlockSendTrajectory.dir/rule
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_BlockSendTrajectory.dir/rule
+
+# Convenience name for target.
+_kurosp_generate_messages_check_deps_BlockSendTrajectory: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_BlockSendTrajectory.dir/rule
+.PHONY : _kurosp_generate_messages_check_deps_BlockSendTrajectory
+
+# fast build rule for target.
+_kurosp_generate_messages_check_deps_BlockSendTrajectory/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_BlockSendTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_BlockSendTrajectory.dir/build
+.PHONY : _kurosp_generate_messages_check_deps_BlockSendTrajectory/fast
+
+# Convenience name for target.
 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/rule:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/rule
 .PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir/rule
@@ -218,6 +232,34 @@ _kurosp_generate_messages_check_deps_XyzYprTrajectory: kurosp/CMakeFiles/_kurosp
 _kurosp_generate_messages_check_deps_XyzYprTrajectory/fast:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build
 .PHONY : _kurosp_generate_messages_check_deps_XyzYprTrajectory/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/blocksend_traj_server.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/blocksend_traj_server.dir/rule
+.PHONY : kurosp/CMakeFiles/blocksend_traj_server.dir/rule
+
+# Convenience name for target.
+blocksend_traj_server: kurosp/CMakeFiles/blocksend_traj_server.dir/rule
+.PHONY : blocksend_traj_server
+
+# fast build rule for target.
+blocksend_traj_server/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_server.dir/build.make kurosp/CMakeFiles/blocksend_traj_server.dir/build
+.PHONY : blocksend_traj_server/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/blocksend_traj_testclient.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/blocksend_traj_testclient.dir/rule
+.PHONY : kurosp/CMakeFiles/blocksend_traj_testclient.dir/rule
+
+# Convenience name for target.
+blocksend_traj_testclient: kurosp/CMakeFiles/blocksend_traj_testclient.dir/rule
+.PHONY : blocksend_traj_testclient
+
+# fast build rule for target.
+blocksend_traj_testclient/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_testclient.dir/build.make kurosp/CMakeFiles/blocksend_traj_testclient.dir/build
+.PHONY : blocksend_traj_testclient/fast
 
 # Convenience name for target.
 kurosp/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
@@ -360,6 +402,90 @@ kurosp_genpy/fast:
 .PHONY : kurosp_genpy/fast
 
 # Convenience name for target.
+kurosp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : kurosp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: kurosp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make kurosp/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : kurosp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: kurosp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make kurosp/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : kurosp/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: kurosp/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/roscpp_generate_messages_py.dir/build.make kurosp/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 kurosp/CMakeFiles/send_traj_server.dir/rule:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/send_traj_server.dir/rule
 .PHONY : kurosp/CMakeFiles/send_traj_server.dir/rule
@@ -386,6 +512,48 @@ send_traj_testclient: kurosp/CMakeFiles/send_traj_testclient.dir/rule
 send_traj_testclient/fast:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/build
 .PHONY : send_traj_testclient/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : kurosp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: kurosp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make kurosp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : kurosp/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: kurosp/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/std_msgs_generate_messages_py.dir/build.make kurosp/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 kurosp/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
@@ -429,6 +597,30 @@ trajectory_msgs_generate_messages_py/fast:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make kurosp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
 
+src/BlockingHandlingServer.o: src/BlockingHandlingServer.cpp.o
+.PHONY : src/BlockingHandlingServer.o
+
+# target to build an object file
+src/BlockingHandlingServer.cpp.o:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_server.dir/build.make kurosp/CMakeFiles/blocksend_traj_server.dir/src/BlockingHandlingServer.cpp.o
+.PHONY : src/BlockingHandlingServer.cpp.o
+
+src/BlockingHandlingServer.i: src/BlockingHandlingServer.cpp.i
+.PHONY : src/BlockingHandlingServer.i
+
+# target to preprocess a source file
+src/BlockingHandlingServer.cpp.i:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_server.dir/build.make kurosp/CMakeFiles/blocksend_traj_server.dir/src/BlockingHandlingServer.cpp.i
+.PHONY : src/BlockingHandlingServer.cpp.i
+
+src/BlockingHandlingServer.s: src/BlockingHandlingServer.cpp.s
+.PHONY : src/BlockingHandlingServer.s
+
+# target to generate assembly for a file
+src/BlockingHandlingServer.cpp.s:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_server.dir/build.make kurosp/CMakeFiles/blocksend_traj_server.dir/src/BlockingHandlingServer.cpp.s
+.PHONY : src/BlockingHandlingServer.cpp.s
+
 src/HandlingServer.o: src/HandlingServer.cpp.o
 .PHONY : src/HandlingServer.o
 
@@ -452,6 +644,54 @@ src/HandlingServer.s: src/HandlingServer.cpp.s
 src/HandlingServer.cpp.s:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_traj_server.dir/build.make kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.s
 .PHONY : src/HandlingServer.cpp.s
+
+src/blocksend_traj_server.o: src/blocksend_traj_server.cpp.o
+.PHONY : src/blocksend_traj_server.o
+
+# target to build an object file
+src/blocksend_traj_server.cpp.o:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_server.dir/build.make kurosp/CMakeFiles/blocksend_traj_server.dir/src/blocksend_traj_server.cpp.o
+.PHONY : src/blocksend_traj_server.cpp.o
+
+src/blocksend_traj_server.i: src/blocksend_traj_server.cpp.i
+.PHONY : src/blocksend_traj_server.i
+
+# target to preprocess a source file
+src/blocksend_traj_server.cpp.i:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_server.dir/build.make kurosp/CMakeFiles/blocksend_traj_server.dir/src/blocksend_traj_server.cpp.i
+.PHONY : src/blocksend_traj_server.cpp.i
+
+src/blocksend_traj_server.s: src/blocksend_traj_server.cpp.s
+.PHONY : src/blocksend_traj_server.s
+
+# target to generate assembly for a file
+src/blocksend_traj_server.cpp.s:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_server.dir/build.make kurosp/CMakeFiles/blocksend_traj_server.dir/src/blocksend_traj_server.cpp.s
+.PHONY : src/blocksend_traj_server.cpp.s
+
+src/blocksend_traj_testclient.o: src/blocksend_traj_testclient.cpp.o
+.PHONY : src/blocksend_traj_testclient.o
+
+# target to build an object file
+src/blocksend_traj_testclient.cpp.o:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_testclient.dir/build.make kurosp/CMakeFiles/blocksend_traj_testclient.dir/src/blocksend_traj_testclient.cpp.o
+.PHONY : src/blocksend_traj_testclient.cpp.o
+
+src/blocksend_traj_testclient.i: src/blocksend_traj_testclient.cpp.i
+.PHONY : src/blocksend_traj_testclient.i
+
+# target to preprocess a source file
+src/blocksend_traj_testclient.cpp.i:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_testclient.dir/build.make kurosp/CMakeFiles/blocksend_traj_testclient.dir/src/blocksend_traj_testclient.cpp.i
+.PHONY : src/blocksend_traj_testclient.cpp.i
+
+src/blocksend_traj_testclient.s: src/blocksend_traj_testclient.cpp.s
+.PHONY : src/blocksend_traj_testclient.s
+
+# target to generate assembly for a file
+src/blocksend_traj_testclient.cpp.s:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_testclient.dir/build.make kurosp/CMakeFiles/blocksend_traj_testclient.dir/src/blocksend_traj_testclient.cpp.s
+.PHONY : src/blocksend_traj_testclient.cpp.s
 
 src/send_traj_server.o: src/send_traj_server.cpp.o
 .PHONY : src/send_traj_server.o
@@ -507,11 +747,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... _kurosp_generate_messages_check_deps_BlockSendTrajectory"
 	@echo "... _kurosp_generate_messages_check_deps_Info"
 	@echo "... _kurosp_generate_messages_check_deps_SendTrajectory"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYpr"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYprState"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYprTrajectory"
+	@echo "... blocksend_traj_server"
+	@echo "... blocksend_traj_testclient"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
@@ -528,15 +771,33 @@ help:
 	@echo "... kurosp_genpy"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... send_traj_server"
 	@echo "... send_traj_testclient"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... src/BlockingHandlingServer.o"
+	@echo "... src/BlockingHandlingServer.i"
+	@echo "... src/BlockingHandlingServer.s"
 	@echo "... src/HandlingServer.o"
 	@echo "... src/HandlingServer.i"
 	@echo "... src/HandlingServer.s"
+	@echo "... src/blocksend_traj_server.o"
+	@echo "... src/blocksend_traj_server.i"
+	@echo "... src/blocksend_traj_server.s"
+	@echo "... src/blocksend_traj_testclient.o"
+	@echo "... src/blocksend_traj_testclient.i"
+	@echo "... src/blocksend_traj_testclient.s"
 	@echo "... src/send_traj_server.o"
 	@echo "... src/send_traj_server.i"
 	@echo "... src/send_traj_server.s"

@@ -58,6 +58,7 @@ add_message_files(
 add_service_files(
   FILES
   SendTrajectory.srv
+  BlockSendTrajectory.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -124,11 +125,24 @@ add_executable(
     src/send_traj_testclient.cpp
 )
 
+add_executable(
+    blocksend_traj_server
+    src/blocksend_traj_server.cpp
+    src/BlockingHandlingServer.cpp
+)
+
+add_executable(
+    blocksend_traj_testclient
+    src/blocksend_traj_testclient.cpp
+)
+
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 add_dependencies(send_traj_server kurosp_generate_messages_cpp)
-
 add_dependencies(send_traj_testclient kurosp_generate_messages_cpp)
+
+add_dependencies(blocksend_traj_server kurosp_generate_messages_cpp)
+add_dependencies(blocksend_traj_testclient kurosp_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(send_traj_server
@@ -147,6 +161,24 @@ target_link_libraries(send_traj_testclient
     #boost_thread
     #/home/mh/Libraries/tinyXml2/lib/libtinyxml2.a
     #/home/mh/dev/kuros03/bin/Release/libkuros.a
+    )
+
+target_link_libraries(blocksend_traj_server
+    ${catkin_LIBRARIES}
+    ${Boost_LIBRARIES}
+    boost_system
+    boost_thread
+    /home/mh/Libraries/tinyXml2/lib/libtinyxml2.a
+    /home/mh/dev/kuros03/bin/Release/libkuros.a
+    )
+
+target_link_libraries(blocksend_traj_testclient
+    ${catkin_LIBRARIES}
+    ${Boost_LIBRARIES}
+    boost_system
+    boost_thread
+    /home/mh/Libraries/tinyXml2/lib/libtinyxml2.a
+    /home/mh/dev/kuros03/bin/Release/libkuros.a
     )
 
 #############

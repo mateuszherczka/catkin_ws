@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/mh/catkin_ws/src/kurosp/msg/Info.msg;/home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg;/home/mh/catkin_ws/src/kurosp/msg/XyzYprTrajectory.msg;/home/mh/catkin_ws/src/kurosp/msg/XyzYprState.msg"
-services_str = "/home/mh/catkin_ws/src/kurosp/srv/SendTrajectory.srv"
+services_str = "/home/mh/catkin_ws/src/kurosp/srv/SendTrajectory.srv;/home/mh/catkin_ws/src/kurosp/srv/BlockSendTrajectory.srv"
 pkg_name = "kurosp"
 dependencies_str = "geometry_msgs;std_msgs;trajectory_msgs"
 langs = "gencpp;genlisp;genpy"

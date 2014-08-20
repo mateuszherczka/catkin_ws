@@ -5,6 +5,7 @@ FILE(REMOVE_RECURSE
   "/home/mh/catkin_ws/devel/include/kurosp/Info.h"
   "/home/mh/catkin_ws/devel/include/kurosp/XyzYpr.h"
   "/home/mh/catkin_ws/devel/include/kurosp/SendTrajectory.h"
+  "/home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -5,6 +5,7 @@ FILE(REMOVE_RECURSE
   "/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/Info.lisp"
   "/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/XyzYpr.lisp"
   "/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/SendTrajectory.lisp"
+  "/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/BlockSendTrajectory.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

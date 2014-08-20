@@ -228,290 +228,17 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named _beginner_tutorials_generate_messages_check_deps_AddTwoInts
+# Target rules for targets named _kurosp_generate_messages_check_deps_BlockSendTrajectory
 
 # Build rule for target.
-_beginner_tutorials_generate_messages_check_deps_AddTwoInts: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _beginner_tutorials_generate_messages_check_deps_AddTwoInts
-.PHONY : _beginner_tutorials_generate_messages_check_deps_AddTwoInts
+_kurosp_generate_messages_check_deps_BlockSendTrajectory: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _kurosp_generate_messages_check_deps_BlockSendTrajectory
+.PHONY : _kurosp_generate_messages_check_deps_BlockSendTrajectory
 
 # fast build rule for target.
-_beginner_tutorials_generate_messages_check_deps_AddTwoInts/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_AddTwoInts.dir/build.make beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_AddTwoInts.dir/build
-.PHONY : _beginner_tutorials_generate_messages_check_deps_AddTwoInts/fast
-
-#=============================================================================
-# Target rules for targets named _beginner_tutorials_generate_messages_check_deps_Num
-
-# Build rule for target.
-_beginner_tutorials_generate_messages_check_deps_Num: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _beginner_tutorials_generate_messages_check_deps_Num
-.PHONY : _beginner_tutorials_generate_messages_check_deps_Num
-
-# fast build rule for target.
-_beginner_tutorials_generate_messages_check_deps_Num/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir/build.make beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir/build
-.PHONY : _beginner_tutorials_generate_messages_check_deps_Num/fast
-
-#=============================================================================
-# Target rules for targets named add_two_ints_client
-
-# Build rule for target.
-add_two_ints_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client
-.PHONY : add_two_ints_client
-
-# fast build rule for target.
-add_two_ints_client/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/add_two_ints_client.dir/build.make beginner_tutorials/CMakeFiles/add_two_ints_client.dir/build
-.PHONY : add_two_ints_client/fast
-
-#=============================================================================
-# Target rules for targets named add_two_ints_server
-
-# Build rule for target.
-add_two_ints_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_server
-.PHONY : add_two_ints_server
-
-# fast build rule for target.
-add_two_ints_server/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/add_two_ints_server.dir/build.make beginner_tutorials/CMakeFiles/add_two_ints_server.dir/build
-.PHONY : add_two_ints_server/fast
-
-#=============================================================================
-# Target rules for targets named beginner_tutorials_gencpp
-
-# Build rule for target.
-beginner_tutorials_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials_gencpp
-.PHONY : beginner_tutorials_gencpp
-
-# fast build rule for target.
-beginner_tutorials_gencpp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_gencpp.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_gencpp.dir/build
-.PHONY : beginner_tutorials_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named beginner_tutorials_generate_messages
-
-# Build rule for target.
-beginner_tutorials_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials_generate_messages
-.PHONY : beginner_tutorials_generate_messages
-
-# fast build rule for target.
-beginner_tutorials_generate_messages/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir/build
-.PHONY : beginner_tutorials_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named beginner_tutorials_generate_messages_cpp
-
-# Build rule for target.
-beginner_tutorials_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials_generate_messages_cpp
-.PHONY : beginner_tutorials_generate_messages_cpp
-
-# fast build rule for target.
-beginner_tutorials_generate_messages_cpp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/build
-.PHONY : beginner_tutorials_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named beginner_tutorials_generate_messages_lisp
-
-# Build rule for target.
-beginner_tutorials_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials_generate_messages_lisp
-.PHONY : beginner_tutorials_generate_messages_lisp
-
-# fast build rule for target.
-beginner_tutorials_generate_messages_lisp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_lisp.dir/build
-.PHONY : beginner_tutorials_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named beginner_tutorials_generate_messages_py
-
-# Build rule for target.
-beginner_tutorials_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials_generate_messages_py
-.PHONY : beginner_tutorials_generate_messages_py
-
-# fast build rule for target.
-beginner_tutorials_generate_messages_py/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py.dir/build
-.PHONY : beginner_tutorials_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named beginner_tutorials_genlisp
-
-# Build rule for target.
-beginner_tutorials_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials_genlisp
-.PHONY : beginner_tutorials_genlisp
-
-# fast build rule for target.
-beginner_tutorials_genlisp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_genlisp.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_genlisp.dir/build
-.PHONY : beginner_tutorials_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named beginner_tutorials_genpy
-
-# Build rule for target.
-beginner_tutorials_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials_genpy
-.PHONY : beginner_tutorials_genpy
-
-# fast build rule for target.
-beginner_tutorials_genpy/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/beginner_tutorials_genpy.dir/build.make beginner_tutorials/CMakeFiles/beginner_tutorials_genpy.dir/build
-.PHONY : beginner_tutorials_genpy/fast
-
-#=============================================================================
-# Target rules for targets named listener
-
-# Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
-
-# fast build rule for target.
-listener/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/listener.dir/build.make beginner_tutorials/CMakeFiles/listener.dir/build
-.PHONY : listener/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
-
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
-
-# Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
-
-# Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
-
-# Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named talker
-
-# Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
-
-# fast build rule for target.
-talker/fast:
-	$(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/build
-.PHONY : talker/fast
+_kurosp_generate_messages_check_deps_BlockSendTrajectory/fast:
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_BlockSendTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_BlockSendTrajectory.dir/build
+.PHONY : _kurosp_generate_messages_check_deps_BlockSendTrajectory/fast
 
 #=============================================================================
 # Target rules for targets named _kurosp_generate_messages_check_deps_Info
@@ -577,6 +304,32 @@ _kurosp_generate_messages_check_deps_XyzYprTrajectory: cmake_check_build_system
 _kurosp_generate_messages_check_deps_XyzYprTrajectory/fast:
 	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/build
 .PHONY : _kurosp_generate_messages_check_deps_XyzYprTrajectory/fast
+
+#=============================================================================
+# Target rules for targets named blocksend_traj_server
+
+# Build rule for target.
+blocksend_traj_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blocksend_traj_server
+.PHONY : blocksend_traj_server
+
+# fast build rule for target.
+blocksend_traj_server/fast:
+	$(MAKE) -f kurosp/CMakeFiles/blocksend_traj_server.dir/build.make kurosp/CMakeFiles/blocksend_traj_server.dir/build
+.PHONY : blocksend_traj_server/fast
+
+#=============================================================================
+# Target rules for targets named blocksend_traj_testclient
+
+# Build rule for target.
+blocksend_traj_testclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blocksend_traj_testclient
+.PHONY : blocksend_traj_testclient
+
+# fast build rule for target.
+blocksend_traj_testclient/fast:
+	$(MAKE) -f kurosp/CMakeFiles/blocksend_traj_testclient.dir/build.make kurosp/CMakeFiles/blocksend_traj_testclient.dir/build
+.PHONY : blocksend_traj_testclient/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
@@ -709,6 +462,84 @@ kurosp_genpy/fast:
 .PHONY : kurosp_genpy/fast
 
 #=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f kurosp/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make kurosp/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f kurosp/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make kurosp/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f kurosp/CMakeFiles/roscpp_generate_messages_py.dir/build.make kurosp/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named send_traj_server
 
 # Build rule for target.
@@ -733,6 +564,45 @@ send_traj_testclient: cmake_check_build_system
 send_traj_testclient/fast:
 	$(MAKE) -f kurosp/CMakeFiles/send_traj_testclient.dir/build.make kurosp/CMakeFiles/send_traj_testclient.dir/build
 .PHONY : send_traj_testclient/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f kurosp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make kurosp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f kurosp/CMakeFiles/std_msgs_generate_messages_py.dir/build.make kurosp/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_cpp
@@ -792,33 +662,14 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... _beginner_tutorials_generate_messages_check_deps_AddTwoInts"
-	@echo "... _beginner_tutorials_generate_messages_check_deps_Num"
-	@echo "... add_two_ints_client"
-	@echo "... add_two_ints_server"
-	@echo "... beginner_tutorials_gencpp"
-	@echo "... beginner_tutorials_generate_messages"
-	@echo "... beginner_tutorials_generate_messages_cpp"
-	@echo "... beginner_tutorials_generate_messages_lisp"
-	@echo "... beginner_tutorials_generate_messages_py"
-	@echo "... beginner_tutorials_genlisp"
-	@echo "... beginner_tutorials_genpy"
-	@echo "... listener"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... talker"
+	@echo "... _kurosp_generate_messages_check_deps_BlockSendTrajectory"
 	@echo "... _kurosp_generate_messages_check_deps_Info"
 	@echo "... _kurosp_generate_messages_check_deps_SendTrajectory"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYpr"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYprState"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYprTrajectory"
+	@echo "... blocksend_traj_server"
+	@echo "... blocksend_traj_testclient"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -829,8 +680,17 @@ help:
 	@echo "... kurosp_generate_messages_py"
 	@echo "... kurosp_genlisp"
 	@echo "... kurosp_genpy"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... send_traj_server"
 	@echo "... send_traj_testclient"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_py"
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_py"

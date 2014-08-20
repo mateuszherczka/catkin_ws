@@ -5,6 +5,7 @@ FILE(REMOVE_RECURSE
   "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Info.py"
   "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYpr.py"
   "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_SendTrajectory.py"
+  "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/_BlockSendTrajectory.py"
   "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/__init__.py"
   "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/srv/__init__.py"
 )

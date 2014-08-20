@@ -50,6 +50,7 @@ kurosp/CMakeFiles/kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/
 kurosp/CMakeFiles/kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/Info.lisp
 kurosp/CMakeFiles/kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/XyzYpr.lisp
 kurosp/CMakeFiles/kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/SendTrajectory.lisp
+kurosp/CMakeFiles/kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/BlockSendTrajectory.lisp
 
 /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/XyzYprState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/XyzYprState.lisp: /home/mh/catkin_ws/src/kurosp/msg/XyzYprState.msg
@@ -86,12 +87,22 @@ kurosp/CMakeFiles/kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kurosp/SendTrajectory.srv"
 	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/mh/catkin_ws/src/kurosp/srv/SendTrajectory.srv -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv
 
+/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/BlockSendTrajectory.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/BlockSendTrajectory.lisp: /home/mh/catkin_ws/src/kurosp/srv/BlockSendTrajectory.srv
+/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/BlockSendTrajectory.lisp: /home/mh/catkin_ws/src/kurosp/msg/XyzYprTrajectory.msg
+/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/BlockSendTrajectory.lisp: /home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg
+/home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/BlockSendTrajectory.lisp: /home/mh/catkin_ws/src/kurosp/msg/Info.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from kurosp/BlockSendTrajectory.srv"
+	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/mh/catkin_ws/src/kurosp/srv/BlockSendTrajectory.srv -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv
+
 kurosp_generate_messages_lisp: kurosp/CMakeFiles/kurosp_generate_messages_lisp
 kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/XyzYprState.lisp
 kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/XyzYprTrajectory.lisp
 kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/Info.lisp
 kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/msg/XyzYpr.lisp
 kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/SendTrajectory.lisp
+kurosp_generate_messages_lisp: /home/mh/catkin_ws/devel/share/common-lisp/ros/kurosp/srv/BlockSendTrajectory.lisp
 kurosp_generate_messages_lisp: kurosp/CMakeFiles/kurosp_generate_messages_lisp.dir/build.make
 .PHONY : kurosp_generate_messages_lisp
 

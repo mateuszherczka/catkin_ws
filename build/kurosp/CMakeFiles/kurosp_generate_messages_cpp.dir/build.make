@@ -50,6 +50,7 @@ kurosp/CMakeFiles/kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include
 kurosp/CMakeFiles/kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/Info.h
 kurosp/CMakeFiles/kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/XyzYpr.h
 kurosp/CMakeFiles/kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/SendTrajectory.h
+kurosp/CMakeFiles/kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h
 
 /home/mh/catkin_ws/devel/include/kurosp/XyzYprState.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/mh/catkin_ws/devel/include/kurosp/XyzYprState.h: /home/mh/catkin_ws/src/kurosp/msg/XyzYprState.msg
@@ -92,12 +93,24 @@ kurosp/CMakeFiles/kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kurosp/SendTrajectory.srv"
 	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/mh/catkin_ws/src/kurosp/srv/SendTrajectory.srv -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/include/kurosp -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h: /home/mh/catkin_ws/src/kurosp/srv/BlockSendTrajectory.srv
+/home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h: /home/mh/catkin_ws/src/kurosp/msg/XyzYprTrajectory.msg
+/home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h: /home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg
+/home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h: /home/mh/catkin_ws/src/kurosp/msg/Info.msg
+/home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from kurosp/BlockSendTrajectory.srv"
+	cd /home/mh/catkin_ws/build/kurosp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/mh/catkin_ws/src/kurosp/srv/BlockSendTrajectory.srv -Ikurosp:/home/mh/catkin_ws/src/kurosp/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p kurosp -o /home/mh/catkin_ws/devel/include/kurosp -e /opt/ros/indigo/share/gencpp/cmake/..
+
 kurosp_generate_messages_cpp: kurosp/CMakeFiles/kurosp_generate_messages_cpp
 kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/XyzYprState.h
 kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/XyzYprTrajectory.h
 kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/Info.h
 kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/XyzYpr.h
 kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/SendTrajectory.h
+kurosp_generate_messages_cpp: /home/mh/catkin_ws/devel/include/kurosp/BlockSendTrajectory.h
 kurosp_generate_messages_cpp: kurosp/CMakeFiles/kurosp_generate_messages_cpp.dir/build.make
 .PHONY : kurosp_generate_messages_cpp
 

@@ -157,8 +157,6 @@ sensor_msgs/JointState.h
 /home/mh/catkin_ws/src/kurosp/include/kurosp/sensor_msgs/JointState.h
 kurosp/XyzYprState.h
 /home/mh/catkin_ws/src/kurosp/include/kurosp/kurosp/XyzYprState.h
-boost/shared_ptr.hpp
--
 
 /home/mh/catkin_ws/src/kurosp/src/HandlingServer.cpp
 HandlingServer.hpp

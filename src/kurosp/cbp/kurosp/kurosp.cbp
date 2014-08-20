@@ -38,6 +38,7 @@
 		<Unit filename="../../msg/Info.msg" />
 		<Unit filename="../../msg/Trajectory.msg" />
 		<Unit filename="../../msg/XyzYpr.msg" />
+		<Unit filename="../../msg/XyzYprState.msg" />
 		<Unit filename="../../msg/XyzYprTrajectory.msg" />
 		<Unit filename="../../msg/Ypr.msg" />
 		<Unit filename="../../package.xml" />
