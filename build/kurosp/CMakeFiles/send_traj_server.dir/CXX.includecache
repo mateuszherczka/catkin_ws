@@ -110,6 +110,22 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+/home/mh/catkin_ws/devel/include/kurosp/XyzYprState.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/mh/catkin_ws/devel/include/kurosp/XyzYprTrajectory.h
 string
 -
@@ -139,6 +155,8 @@ kurosp/SendTrajectory.h
 /home/mh/catkin_ws/src/kurosp/include/kurosp/kurosp/SendTrajectory.h
 sensor_msgs/JointState.h
 /home/mh/catkin_ws/src/kurosp/include/kurosp/sensor_msgs/JointState.h
+kurosp/XyzYprState.h
+/home/mh/catkin_ws/src/kurosp/include/kurosp/kurosp/XyzYprState.h
 boost/shared_ptr.hpp
 -
 

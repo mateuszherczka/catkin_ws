@@ -14,7 +14,11 @@ HandlingServer::~HandlingServer()
 void HandlingServer::handleResponse(const KukaResponse &response)
 {
 
-    kurosp::XyzYpr carMsg;
+    kurosp::XyzYprState carMsg;
+
+    carMsg.status = response.info[KUKA_RSP_STATUS];
+    carMsg.id = response.info[KUKA_RSP_TRAJID];
+    carMsg.tick = response.info[KUKA_RSP_TICK];
 
     for (size_t i = 0; i < response.frame.size(); ++i)
     {
@@ -44,6 +48,6 @@ void HandlingServer::handleDisconnect()
 
 void HandlingServer::createPublishers(ros::NodeHandle &n)
 {
-    carState = n.advertise<kurosp::XyzYpr>("kuka_cartesian_state", 1000);
+    carState = n.advertise<kurosp::XyzYprState>("kuka_cartesian_state", 1000);
     jointState = n.advertise<sensor_msgs::JointState>("kuka_joint_state", 1000);
 }

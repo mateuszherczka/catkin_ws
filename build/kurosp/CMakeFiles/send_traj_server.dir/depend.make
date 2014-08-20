@@ -7,6 +7,7 @@ kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /home/mh/catkin
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/SendTrajectoryRequest.h
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/SendTrajectoryResponse.h
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/XyzYpr.h
+kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/XyzYprState.h
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/XyzYprTrajectory.h
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /home/mh/catkin_ws/src/kurosp/include/kurosp/HandlingServer.hpp
 kurosp/CMakeFiles/send_traj_server.dir/src/HandlingServer.cpp.o: /home/mh/catkin_ws/src/kurosp/src/HandlingServer.cpp
@@ -85,6 +86,7 @@ kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catk
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/SendTrajectoryRequest.h
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/SendTrajectoryResponse.h
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/XyzYpr.h
+kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/XyzYprState.h
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catkin_ws/devel/include/kurosp/XyzYprTrajectory.h
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catkin_ws/src/kurosp/include/kurosp/HandlingServer.hpp
 kurosp/CMakeFiles/send_traj_server.dir/src/send_traj_server.cpp.o: /home/mh/catkin_ws/src/kurosp/src/send_traj_server.cpp

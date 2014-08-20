@@ -51,6 +51,7 @@ add_message_files(
   Info.msg
   XyzYpr.msg
   XyzYprTrajectory.msg
+  XyzYprState.msg
 )
 
 ## Generate services in the 'srv' folder

@@ -553,6 +553,19 @@ _kurosp_generate_messages_check_deps_XyzYpr/fast:
 .PHONY : _kurosp_generate_messages_check_deps_XyzYpr/fast
 
 #=============================================================================
+# Target rules for targets named _kurosp_generate_messages_check_deps_XyzYprState
+
+# Build rule for target.
+_kurosp_generate_messages_check_deps_XyzYprState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _kurosp_generate_messages_check_deps_XyzYprState
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprState
+
+# fast build rule for target.
+_kurosp_generate_messages_check_deps_XyzYprState/fast:
+	$(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir/build
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprState/fast
+
+#=============================================================================
 # Target rules for targets named _kurosp_generate_messages_check_deps_XyzYprTrajectory
 
 # Build rule for target.
@@ -804,6 +817,7 @@ help:
 	@echo "... _kurosp_generate_messages_check_deps_Info"
 	@echo "... _kurosp_generate_messages_check_deps_SendTrajectory"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYpr"
+	@echo "... _kurosp_generate_messages_check_deps_XyzYprState"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYprTrajectory"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"

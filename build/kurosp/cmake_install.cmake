@@ -37,6 +37,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/mh/catkin_ws/src/kurosp/msg/Info.msg"
     "/home/mh/catkin_ws/src/kurosp/msg/XyzYpr.msg"
     "/home/mh/catkin_ws/src/kurosp/msg/XyzYprTrajectory.msg"
+    "/home/mh/catkin_ws/src/kurosp/msg/XyzYprState.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

@@ -17,4 +17,6 @@
     (:file "_package_Info" :depends-on ("_package"))
     (:file "Ypr" :depends-on ("_package_Ypr"))
     (:file "_package_Ypr" :depends-on ("_package"))
+    (:file "XyzYprState" :depends-on ("_package_XyzYprState"))
+    (:file "_package_XyzYprState" :depends-on ("_package"))
   ))

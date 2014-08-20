@@ -7,11 +7,9 @@
 #include "kurosp/SendTrajectory.h"
 
 #include "sensor_msgs/JointState.h"
+#include "kurosp/XyzYprState.h"
 
 #include <boost/shared_ptr.hpp>
-
-//typedef boost::shared_ptr<ros::Publisher> pub_ptr;
-
 
 class HandlingServer : public Server
 {

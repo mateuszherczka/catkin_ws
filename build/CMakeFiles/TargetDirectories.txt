@@ -3,6 +3,7 @@
 /home/mh/catkin_ws/build/kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_Info.dir
 /home/mh/catkin_ws/build/kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_SendTrajectory.dir
 /home/mh/catkin_ws/build/kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYpr.dir
+/home/mh/catkin_ws/build/kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir
 /home/mh/catkin_ws/build/kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir
 /home/mh/catkin_ws/build/beginner_tutorials/CMakeFiles/add_two_ints_client.dir
 /home/mh/catkin_ws/build/beginner_tutorials/CMakeFiles/add_two_ints_server.dir

@@ -192,6 +192,20 @@ _kurosp_generate_messages_check_deps_XyzYpr/fast:
 .PHONY : _kurosp_generate_messages_check_deps_XyzYpr/fast
 
 # Convenience name for target.
+kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir/rule
+.PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir/rule
+
+# Convenience name for target.
+_kurosp_generate_messages_check_deps_XyzYprState: kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir/rule
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprState
+
+# fast build rule for target.
+_kurosp_generate_messages_check_deps_XyzYprState/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir/build.make kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprState.dir/build
+.PHONY : _kurosp_generate_messages_check_deps_XyzYprState/fast
+
+# Convenience name for target.
 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule
 .PHONY : kurosp/CMakeFiles/_kurosp_generate_messages_check_deps_XyzYprTrajectory.dir/rule
@@ -496,6 +510,7 @@ help:
 	@echo "... _kurosp_generate_messages_check_deps_Info"
 	@echo "... _kurosp_generate_messages_check_deps_SendTrajectory"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYpr"
+	@echo "... _kurosp_generate_messages_check_deps_XyzYprState"
 	@echo "... _kurosp_generate_messages_check_deps_XyzYprTrajectory"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"

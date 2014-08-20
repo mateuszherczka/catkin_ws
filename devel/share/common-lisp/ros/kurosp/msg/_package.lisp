@@ -13,5 +13,7 @@
    "INFO"
    "<YPR>"
    "YPR"
+   "<XYZYPRSTATE>"
+   "XYZYPRSTATE"
   ))
 

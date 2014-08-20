@@ -6,12 +6,10 @@
 #include "kuros.h"
 #include "HandlingServer.hpp"
 
-//typedef boost::shared_ptr<ros::Publisher> pub_ptr;
-
 // create server and load ServerConfig.xml
 HandlingServer kserver;
 
-/**
+/*
 If you want, print the incoming trajectory to console.
 */
 void printTrajectory(const info_vec &info, const trajectory_vec &trajectory)
@@ -94,13 +92,8 @@ bool sendService(kurosp::SendTrajectory::Request &req,
     return true;
 }
 
-
 int main(int argc, char **argv)
 {
-    // start the server
-    kserver.setReconnect(true); // start listening again if connection breaks
-    kserver.startListening();
-
     // init ROS
     ros::init(argc, argv, "send_trajectory_server");
     ros::NodeHandle n;
@@ -108,14 +101,12 @@ int main(int argc, char **argv)
     // advertise service
     ros::ServiceServer service = n.advertiseService("send_trajectory", sendService);
 
+    // the publisher are stored in the server so you need to create them before
     kserver.createPublishers(n);
 
-    // advertise publishers
-    //ros::Publisher cartesian_pub = n.advertise<kurosp::XyzYpr>("kuka_cartesian_state", 1000);
-    //ros::Publisher jointstate_pub = n.advertise<sensor_msgs::JointState>("kuka_joint_state", 1000);
-
-    //kserver.carState.reset(cartesian_pub);
-    //kserver.jointState = n.advertise<sensor_msgs::JointState>("kuka_joint_state", 1000);
+    // start the server
+    kserver.setReconnect(true); // if connection breaks, start listening again
+    kserver.startListening();
 
     ROS_INFO("Ready to send trajectory to Kuka.");
 

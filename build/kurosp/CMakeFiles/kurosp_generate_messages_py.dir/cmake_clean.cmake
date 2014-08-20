@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/kurosp_generate_messages_py"
+  "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprState.py"
   "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYprTrajectory.py"
   "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_Info.py"
   "/home/mh/catkin_ws/devel/lib/python2.7/dist-packages/kurosp/msg/_XyzYpr.py"
