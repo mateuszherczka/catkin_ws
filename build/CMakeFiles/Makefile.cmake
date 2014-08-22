@@ -210,6 +210,8 @@ SET(CMAKE_DEPEND_INFO_FILES
   "kurosp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "kurosp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "kurosp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "kurosp/CMakeFiles/send_axis_testclient.dir/DependInfo.cmake"
+  "kurosp/CMakeFiles/send_stream_testclient.dir/DependInfo.cmake"
   "kurosp/CMakeFiles/send_traj_server.dir/DependInfo.cmake"
   "kurosp/CMakeFiles/send_traj_testclient.dir/DependInfo.cmake"
   "kurosp/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake"

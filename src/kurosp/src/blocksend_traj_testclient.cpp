@@ -38,29 +38,44 @@ int main(int argc, char **argv)
 
     // define info for the trajectory
     srv.request.trajectory.info.response_mode = KUKA_RMODE_STREAM;
-    srv.request.trajectory.info.response_ms = 20;
-    srv.request.trajectory.info.traj_id = 666;
+    srv.request.trajectory.info.response_ms = 100;
     srv.request.trajectory.info.run = YES;
     srv.request.trajectory.info.vel = 200;
     srv.request.trajectory.info.tol = 20;
     srv.request.trajectory.info.frame_type = KUKA_CARTESIAN;
 
-    // call the service and send
-    if (client.call(srv))
+    int currentTrajId = 1;
+    srv.request.trajectory.info.traj_id = currentTrajId;
+
+    // let's loop and keep sending
+    while(ros::ok())
     {
-        if (srv.response.success)
+        ROS_INFO("Sending trajectory.");
+
+        if (client.call(srv))   // call the service and block
         {
-            ROS_INFO("Trajectory sent.");
+            if (srv.response.success)
+            {
+                ROS_INFO("Trajectory sent.");
+
+                // increment trajectory id for next loop
+                ++currentTrajId;
+                srv.request.trajectory.info.traj_id = currentTrajId;
+            }
+            else
+            {
+                // response.success == false means robot is offline for some reason
+                ROS_INFO("Server not accepting, is robot connected?");
+
+                ros::Duration(1).sleep();  // wait a second before trying again
+            }
         }
         else
         {
-            ROS_INFO("Server not accepting, is robot connected?");
+            // if the call returns false, then service node is not active, or other ros error
+            ROS_ERROR("Failed to call service send_trajectory.");
+            return 1;
         }
-    }
-    else
-    {
-        ROS_ERROR("Failed to call service send_trajectory");
-        return 1;
     }
 
     return 0;

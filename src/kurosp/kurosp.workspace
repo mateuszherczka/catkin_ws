@@ -3,5 +3,6 @@
 	<Workspace title="Workspace">
 		<Project filename="cbp/kurosp/kurosp.cbp" />
 		<Project filename="../../../dev/kuros03/kuros03.cbp" />
+		<Project filename="../../../kurostream_dev/kurostream_test/kurostream_test.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

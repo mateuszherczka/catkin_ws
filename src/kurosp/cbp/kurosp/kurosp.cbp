@@ -33,6 +33,9 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="../../CMakeLists.txt" />
+		<Unit filename="../../include/kurosp/BlockingHandlingServer.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="../../include/kurosp/HandlingServer.hpp" />
 		<Unit filename="../../msg/Frame.msg" />
 		<Unit filename="../../msg/Info.msg" />
@@ -42,11 +45,27 @@
 		<Unit filename="../../msg/XyzYprTrajectory.msg" />
 		<Unit filename="../../msg/Ypr.msg" />
 		<Unit filename="../../package.xml" />
+		<Unit filename="../../src/BlockingHandlingServer.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="../../src/HandlingServer.cpp" />
+		<Unit filename="../../src/blocksend_traj_server.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../../src/blocksend_traj_testclient.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../../src/send_axis_testclient.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../../src/send_stream_testclient.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="../../src/send_traj_server.cpp" />
 		<Unit filename="../../src/send_traj_testclient.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="../../srv/BlockSendTrajectory.srv" />
 		<Unit filename="../../srv/SendTrajectory.srv" />
 		<Extensions>
 			<code_completion />

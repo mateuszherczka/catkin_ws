@@ -486,6 +486,34 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+kurosp/CMakeFiles/send_axis_testclient.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/send_axis_testclient.dir/rule
+.PHONY : kurosp/CMakeFiles/send_axis_testclient.dir/rule
+
+# Convenience name for target.
+send_axis_testclient: kurosp/CMakeFiles/send_axis_testclient.dir/rule
+.PHONY : send_axis_testclient
+
+# fast build rule for target.
+send_axis_testclient/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_axis_testclient.dir/build.make kurosp/CMakeFiles/send_axis_testclient.dir/build
+.PHONY : send_axis_testclient/fast
+
+# Convenience name for target.
+kurosp/CMakeFiles/send_stream_testclient.dir/rule:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/send_stream_testclient.dir/rule
+.PHONY : kurosp/CMakeFiles/send_stream_testclient.dir/rule
+
+# Convenience name for target.
+send_stream_testclient: kurosp/CMakeFiles/send_stream_testclient.dir/rule
+.PHONY : send_stream_testclient
+
+# fast build rule for target.
+send_stream_testclient/fast:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_stream_testclient.dir/build.make kurosp/CMakeFiles/send_stream_testclient.dir/build
+.PHONY : send_stream_testclient/fast
+
+# Convenience name for target.
 kurosp/CMakeFiles/send_traj_server.dir/rule:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kurosp/CMakeFiles/send_traj_server.dir/rule
 .PHONY : kurosp/CMakeFiles/send_traj_server.dir/rule
@@ -693,6 +721,54 @@ src/blocksend_traj_testclient.cpp.s:
 	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/blocksend_traj_testclient.dir/build.make kurosp/CMakeFiles/blocksend_traj_testclient.dir/src/blocksend_traj_testclient.cpp.s
 .PHONY : src/blocksend_traj_testclient.cpp.s
 
+src/send_axis_testclient.o: src/send_axis_testclient.cpp.o
+.PHONY : src/send_axis_testclient.o
+
+# target to build an object file
+src/send_axis_testclient.cpp.o:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_axis_testclient.dir/build.make kurosp/CMakeFiles/send_axis_testclient.dir/src/send_axis_testclient.cpp.o
+.PHONY : src/send_axis_testclient.cpp.o
+
+src/send_axis_testclient.i: src/send_axis_testclient.cpp.i
+.PHONY : src/send_axis_testclient.i
+
+# target to preprocess a source file
+src/send_axis_testclient.cpp.i:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_axis_testclient.dir/build.make kurosp/CMakeFiles/send_axis_testclient.dir/src/send_axis_testclient.cpp.i
+.PHONY : src/send_axis_testclient.cpp.i
+
+src/send_axis_testclient.s: src/send_axis_testclient.cpp.s
+.PHONY : src/send_axis_testclient.s
+
+# target to generate assembly for a file
+src/send_axis_testclient.cpp.s:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_axis_testclient.dir/build.make kurosp/CMakeFiles/send_axis_testclient.dir/src/send_axis_testclient.cpp.s
+.PHONY : src/send_axis_testclient.cpp.s
+
+src/send_stream_testclient.o: src/send_stream_testclient.cpp.o
+.PHONY : src/send_stream_testclient.o
+
+# target to build an object file
+src/send_stream_testclient.cpp.o:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_stream_testclient.dir/build.make kurosp/CMakeFiles/send_stream_testclient.dir/src/send_stream_testclient.cpp.o
+.PHONY : src/send_stream_testclient.cpp.o
+
+src/send_stream_testclient.i: src/send_stream_testclient.cpp.i
+.PHONY : src/send_stream_testclient.i
+
+# target to preprocess a source file
+src/send_stream_testclient.cpp.i:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_stream_testclient.dir/build.make kurosp/CMakeFiles/send_stream_testclient.dir/src/send_stream_testclient.cpp.i
+.PHONY : src/send_stream_testclient.cpp.i
+
+src/send_stream_testclient.s: src/send_stream_testclient.cpp.s
+.PHONY : src/send_stream_testclient.s
+
+# target to generate assembly for a file
+src/send_stream_testclient.cpp.s:
+	cd /home/mh/catkin_ws/build && $(MAKE) -f kurosp/CMakeFiles/send_stream_testclient.dir/build.make kurosp/CMakeFiles/send_stream_testclient.dir/src/send_stream_testclient.cpp.s
+.PHONY : src/send_stream_testclient.cpp.s
+
 src/send_traj_server.o: src/send_traj_server.cpp.o
 .PHONY : src/send_traj_server.o
 
@@ -777,6 +853,8 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... send_axis_testclient"
+	@echo "... send_stream_testclient"
 	@echo "... send_traj_server"
 	@echo "... send_traj_testclient"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -798,6 +876,12 @@ help:
 	@echo "... src/blocksend_traj_testclient.o"
 	@echo "... src/blocksend_traj_testclient.i"
 	@echo "... src/blocksend_traj_testclient.s"
+	@echo "... src/send_axis_testclient.o"
+	@echo "... src/send_axis_testclient.i"
+	@echo "... src/send_axis_testclient.s"
+	@echo "... src/send_stream_testclient.o"
+	@echo "... src/send_stream_testclient.i"
+	@echo "... src/send_stream_testclient.s"
 	@echo "... src/send_traj_server.o"
 	@echo "... src/send_traj_server.i"
 	@echo "... src/send_traj_server.s"

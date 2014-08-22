@@ -98,14 +98,6 @@ blocksend_traj_testclient_EXTERNAL_OBJECTS =
 /home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 /home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /home/mh/Libraries/tinyXml2/lib/libtinyxml2.a
-/home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /home/mh/dev/kuros03/bin/Release/libkuros.a
-/home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /home/mh/Libraries/tinyXml2/lib/libtinyxml2.a
-/home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: /home/mh/dev/kuros03/bin/Release/libkuros.a
 /home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient: kurosp/CMakeFiles/blocksend_traj_testclient.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/mh/catkin_ws/devel/lib/kurosp/blocksend_traj_testclient"
 	cd /home/mh/catkin_ws/build/kurosp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/blocksend_traj_testclient.dir/link.txt --verbose=$(VERBOSE)

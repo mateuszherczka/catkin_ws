@@ -5,23 +5,36 @@
 
 typedef std::vector<double> frame_vec;
 
+/** This sends AXIS A1-A6 angles instead of cartesian coords.
+    By setting frame_type to KUKA_AXIS the KRL program
+    on the robot executes interpolated PTP motion instead.
+    */
+
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "send_trajectory_testclient");
+    ros::init(argc, argv, "send_axis_testclient");
 
     ros::NodeHandle n;
     ros::ServiceClient client = n.serviceClient<kurosp::SendTrajectory>("send_trajectory");
 
     kurosp::SendTrajectory srv;
 
-    // define a trajectory with some poses
-    int posecount = 4;
+    // define a trajectory with some poses in axis angles
+    int posecount = 12;
     double poses[][KUKA_FRAME_SIZE] =
     {
-        {86.603, 650, 555.56, -90, 0, 180,      },
-        {86.603, 550, 611.11, -90, 0, 180,      },
-        {-2.4499e-13, 500, 666.67, -90, 0, 180, },
-        {0, 530, 730, -90, 45, 180              }
+        {-90, -91, 91, 0, 0, 0,     },
+        {-90, -91, 91, 0, 45, 0,    },
+        {-90, -91, 91, 0, 45, 45,   },
+        {-90, -91, 91, 0, 45, 0,    },
+        {-90, -91, 91, 20, 45, 0,   },
+        {-90, -91, 91, 0, 45, 0,    },
+        {-90, -91, 80, 0, 45, 0,    },
+        {-90, -91, 91, 0, 45, 0,    },
+        {-90, -81, 91, 0, 45, 0,    },
+        {-90, -91, 91, 0, 45, 0,    },
+        {-80, -91, 91, 0, 45, 0,    },
+        {-90, -91, 91, 0, 45, 0     }
     };
 
     // load into ros message
@@ -43,14 +56,14 @@ int main(int argc, char **argv)
     srv.request.trajectory.info.run = YES;
     srv.request.trajectory.info.vel = 200;
     srv.request.trajectory.info.tol = 20;
-    srv.request.trajectory.info.frame_type = KUKA_CARTESIAN;
+    srv.request.trajectory.info.frame_type = KUKA_AXIS; // this sets PTP axis
 
     // call the service and send
     if (client.call(srv))
     {
         if (srv.response.success)
         {
-            ROS_INFO("Trajectory sent.");
+            ROS_INFO("Axis trajectory sent.");
         }
         else
         {

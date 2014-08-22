@@ -540,6 +540,32 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named send_axis_testclient
+
+# Build rule for target.
+send_axis_testclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 send_axis_testclient
+.PHONY : send_axis_testclient
+
+# fast build rule for target.
+send_axis_testclient/fast:
+	$(MAKE) -f kurosp/CMakeFiles/send_axis_testclient.dir/build.make kurosp/CMakeFiles/send_axis_testclient.dir/build
+.PHONY : send_axis_testclient/fast
+
+#=============================================================================
+# Target rules for targets named send_stream_testclient
+
+# Build rule for target.
+send_stream_testclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 send_stream_testclient
+.PHONY : send_stream_testclient
+
+# fast build rule for target.
+send_stream_testclient/fast:
+	$(MAKE) -f kurosp/CMakeFiles/send_stream_testclient.dir/build.make kurosp/CMakeFiles/send_stream_testclient.dir/build
+.PHONY : send_stream_testclient/fast
+
+#=============================================================================
 # Target rules for targets named send_traj_server
 
 # Build rule for target.
@@ -686,6 +712,8 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... send_axis_testclient"
+	@echo "... send_stream_testclient"
 	@echo "... send_traj_server"
 	@echo "... send_traj_testclient"
 	@echo "... std_msgs_generate_messages_cpp"
