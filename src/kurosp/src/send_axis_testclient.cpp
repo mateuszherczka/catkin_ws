@@ -54,7 +54,14 @@ int main(int argc, char **argv)
     srv.request.trajectory.info.response_ms = 100;
     srv.request.trajectory.info.traj_id = 666;
     srv.request.trajectory.info.run = YES;
-    srv.request.trajectory.info.vel = 200;
+
+    /** WARNING! Be very careful setting velocity in AXIS mode.
+    Velocity in AXIS mode is interpreted as (maxAxisVelocity * 0.01)
+    so 500 gives 5% of maximum, which is already fast enough.
+    A value of 2000 (20%) is BRUTAL!
+    */
+    srv.request.trajectory.info.vel = 500; // [1/100 percent] in AXIS mode
+
     srv.request.trajectory.info.tol = 20;
     srv.request.trajectory.info.frame_type = KUKA_AXIS; // this sets PTP axis
 

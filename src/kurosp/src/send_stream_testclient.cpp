@@ -95,12 +95,13 @@ int main(int argc, char **argv)
 
     cout << "WARNING! Make sure robot stopped when quitting this node!" << endl;
 
-    cout << "Sending absolute start pose." << endl;
+    cout << "Sending absolute start pose and waiting 5s." << endl;
 
     srv.request.trajectory.info.frame_type = KUKA_CARTESIAN;    // absolute cartesian
     srv.request.trajectory.frames[0].xyzypr = startpose;
 
-    if (client.call(srv))   // call the service and send
+    // call the service and send
+    if (client.call(srv))
     {
         if (srv.response.success)
         {
@@ -117,6 +118,8 @@ int main(int argc, char **argv)
         ROS_ERROR("Failed to call service send_trajectory");
         return 1;
     }
+
+    ros::Duration(5).sleep();
 
     cout << "Starting to send corrections with stepsize " << step << " mm." << endl;
 
